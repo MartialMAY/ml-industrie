@@ -6,9 +6,13 @@
       L'affichage de notre calatogue de formations est optimisé pour tablettes
       et ordinateurs.
     </p>
-    <p class="lowRes_catalogue_txt">Dans un souci de lisibilité, veuillez cliquer sur le
-      boutton ci-dessous pour le visionner ou le télécharger</p>
-    <PdfFileComponent />
+    <p class="lowRes_catalogue_txt">
+      Dans un souci de lisibilité, veuillez cliquer sur le boutton ci-dessous
+      pour le visionner ou le télécharger
+    </p>
+    <button class="lowRes_catalogue_btn">
+      <PdfFileComponent />
+    </button>
   </div>
   <table class="table is-bordered is-hoverable">
     <tr>
