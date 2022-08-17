@@ -2,12 +2,11 @@
   <Header />
   <!-- Début de la section formations-->
   <section class="hero is-medium is-bold" id="section_historique">
-    <i class="gg-arrow-long-down animateDown"></i><i id="rightArrow" class="gg-arrow-long-down animateDown"></i>
+    <i id="leftArrow" class="gg-arrow-long-down animateDown"></i
+    ><i id="rightArrow" class="gg-arrow-long-down animateDown"></i>
     <!--Affichage de l'encart de présentation + certification-->
     <div class="hero-body">
-      <h1 class="title">
-        Une entreprise de confiance
-      </h1>
+      <h1 class="title">Une entreprise de confiance</h1>
       <div class="container container_certification">
         <div class="container_certification__flex-left">
           <img src="../../public/img/certification_qualiopi.png" />
@@ -26,9 +25,9 @@
       </div>
     </div>
     <i class="gg-arrow-long-right animate"></i>
-    </section>
-    <!--Fin de l'affichage de l'encart de présentation + certification-->
-    <section class="hero is-medium is-bold" id="section_formations">
+  </section>
+  <!--Fin de l'affichage de l'encart de présentation + certification-->
+  <section class="hero is-medium is-bold" id="section_formations">
     <div class="hero-body">
       <div class="container cont_formations">
         <div class="flex_txt">
@@ -147,51 +146,71 @@
 </template>
 
 <script>
-import Header from '../components/Header.vue'
-import Footer from '../components/Footer.vue'
+import Header from "../components/Header.vue";
+import Footer from "../components/Footer.vue";
 export default {
-  name: 'Home',
+  name: "Home",
   components: { Header, Footer },
-  data () {
+  data() {
     return {
-      firstParagraph: '', // initial value
-      secondParagraph: '',
-      thirdParagraph: ''
-    }
- },
-  created () {
-    window.addEventListener('scroll', this.pageScroll)
+      firstParagraph: "",
+      secondParagraph: "",
+      thirdParagraph: "",
+      window: {
+        width: 0,
+        height: 0,
+      },
+    };
   },
-  unmounted () {
-    window.removeEventListener('scroll', this.pageScroll)
+  created() {
+    window.addEventListener("scroll", this.pageScroll);
   },
-    mounted () {
-      this.typeWriter1()
-},
+  unmounted() {
+    window.removeEventListener("scroll", this.pageScroll);
+    window.removeEventListener("resize", this.handleResize);
+  },
+  mounted() {
+    this.typeWriter1(), window.addEventListener("resize", this.handleResize);
+    this.handleResize();
+    this.respNav();
+  },
   methods: {
-    pageScroll () {
-      // Any code to be executed when the window is scrolled
-      const allAnime = document.querySelectorAll('.animate')
+    pageScroll() {
+      const allAnime = document.querySelectorAll(".animate");
       for (let i = 0; i < allAnime.length; i++) {
-        allAnime[i].classList.add('animateArrow')
+        allAnime[i].classList.add("animateArrow");
       }
-      const allAnimeDown = document.querySelectorAll('.animateDown')
+      const allAnimeDown = document.querySelectorAll(".animateDown");
       for (let i = 0; i < allAnimeDown.length; i++) {
-        allAnimeDown[i].classList.add('animateArrowDown')
+        allAnimeDown[i].classList.add("animateArrowDown");
+      }
+    },
+    handleResize() {
+      this.window.width = window.innerWidth;
+      this.window.height = window.innerHeight;
+    },
+    //Si la résolution est trop faible, les flêches seront retirées de l'affichage
+    respNav() {
+      if (this.window.width <= 475) {
+        document.getElementById("leftArrow").remove("leftArrow");
+        document.getElementById("rightArrow").remove("rightArrow");
       }
     },
     typeWriter1: function () {
-      const v = this
+      const v = this;
       setTimeout(function () {
-         v.firstParagraph = 'La Société ML INDUSTRIE a été créée en 2019 et est implantée actuellement sur les régions rouennaise et lyonnaise.'
-      }, 1000)
+        v.firstParagraph =
+          "La Société ML INDUSTRIE a été créée en 2019 et est implantée actuellement sur les régions rouennaise et lyonnaise.";
+      }, 1000);
       setTimeout(function () {
-         v.secondParagraph = 'Elle collabore avec 10 formateurs dans plusieurs domaines techniques.'
-      }, 2000)
+        v.secondParagraph =
+          "Elle collabore avec 10 formateurs dans plusieurs domaines techniques.";
+      }, 2000);
       setTimeout(function () {
-         v.thirdParagraph = 'En plein essor et avec 20 formations à son catalogue, elle forme environ 140 stagiaires par an et a vu son chiffre d\'affaires s\'élever à 130 K€ en deux ans seulement.'
-      }, 3000)
-    }
-  }
-}
+        v.thirdParagraph =
+          "En plein essor et avec 20 formations à son catalogue, elle forme environ 140 stagiaires par an et a vu son chiffre d'affaires s'élever à 130 K€ en deux ans seulement.";
+      }, 3000);
+    },
+  },
+};
 </script>

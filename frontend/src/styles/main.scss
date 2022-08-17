@@ -105,6 +105,9 @@ footer {
 }
 .hero.is-medium .hero-body {
   padding: 2rem 4.5rem;
+  @media screen and (max-width: 475px) {
+    padding: 1.5rem 1.5rem;
+  }
 }
 .title {
   text-align: center;
@@ -125,16 +128,22 @@ footer {
     margin-bottom: 30px;
   }
   &__flex-right {
+    text-align: center;
     padding: 3rem;
     background-color: #c0c4c2;
     box-shadow: rgba(96, 107, 107, 0.4) -5px 5px, rgba(41, 43, 43, 0.3) -10px 10px, rgba(24, 23, 23, 0.2) -15px 15px, rgba(20, 20, 20, 0.1) -20px 20px, rgba(3, 3, 3, 0.05) -25px 25px;
     @media screen and (max-width: 769px) {
       font-size: .9rem ;
       padding: 1.1rem;
+      margin: 1rem 1rem;
     }
     @media screen and (min-width: 769px) {
-      margin: 3rem;
+      margin: 3rem 9rem;
     }
+  }
+  &__flex-right p {
+    padding: 1.1rem;
+    font-size: larger;
   }
 }
 .container_certification__flex-left img {
