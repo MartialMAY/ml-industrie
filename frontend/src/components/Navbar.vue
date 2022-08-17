@@ -38,8 +38,7 @@
             <a class="navbar-link"> Plus </a>
 
             <div class="navbar-dropdown">
-              <a class="navbar-item"> Tarifs </a>
-              <a class="navbar-item"> Programme de formation </a>
+              <a class="navbar-item" href="/programme"> Programme de formation </a>
               <a class="navbar-item"> Livret Stagiaire </a>
               <hr class="navbar-divider" />
               <a class="navbar-item"> En savoir plus </a>

@@ -521,3 +521,66 @@ only screen and (min-width: 320px) and (max-width: 784px){
 .displayDownload {
   display: inline;
 }
+
+//     PROGRAMME.VUE        //
+
+.prog_header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  &__title {
+    order: 2;
+    margin-top: 30px;
+    text-align: center;
+    font-size: x-large;
+    font-weight: 800;
+  }
+  &__title h1 {
+    text-transform: uppercase;
+  }
+  &__img {
+    order: 1;
+    width: 12rem;
+  }
+}
+.container {
+  flex-direction: column;
+}
+.separator {
+  border-top: 1px solid #000;
+  margin: 0 auto;
+  width: 50%;
+  margin-top: 100px;
+}
+.navbar {
+  flex-direction: column;
+  background-color: #fff;
+  margin-top: 100px;
+  line-height: 3em;
+  text-align: center;
+}
+.navbar h3 {
+  margin-bottom: 30px;
+}
+#bottomSeparator {
+  margin-top: 70px;
+}
+#centre_formation {
+  display: flex;
+  flex-direction: row;
+  margin-top: 300px;
+  justify-content: center;
+}
+.centre {
+  &__left h4 {
+    margin: 40px 0px;
+    text-transform: uppercase;
+  }
+  &__left h4 span {
+    margin-right: 20px;
+  }
+  &__right {
+    margin-top: 80px;
+  }
+}

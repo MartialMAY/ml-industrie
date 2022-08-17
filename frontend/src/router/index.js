@@ -1,6 +1,7 @@
 import { createWebHistory, createRouter } from 'vue-router'
 import Home from '../views/Home.vue'
 import Catalogue from '../views/Catalogue.vue'
+import Programme from '../views/Programme.vue'
 import Header from '../components/Header.vue'
 import Footer from '../components/Footer.vue'
 import PdfFileComponent from "../components/PdfFileComponent.vue";
@@ -15,6 +16,11 @@ const routes = [
     path: '/catalogue',
     name: 'Catalogue',
     component: Catalogue
+  },
+  {
+    path: '/programme',
+    name: 'Programme',
+    component: Programme
   },
   {
     path: '/header',
