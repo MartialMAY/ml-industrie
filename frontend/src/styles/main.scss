@@ -131,9 +131,11 @@ footer {
     text-align: center;
     padding: 3rem;
     background-color: #c0c4c2;
-    box-shadow: rgba(96, 107, 107, 0.4) -5px 5px, rgba(41, 43, 43, 0.3) -10px 10px, rgba(24, 23, 23, 0.2) -15px 15px, rgba(20, 20, 20, 0.1) -20px 20px, rgba(3, 3, 3, 0.05) -25px 25px;
+    box-shadow: rgba(96, 107, 107, 0.4) -5px 5px,
+      rgba(41, 43, 43, 0.3) -10px 10px, rgba(24, 23, 23, 0.2) -15px 15px,
+      rgba(20, 20, 20, 0.1) -20px 20px, rgba(3, 3, 3, 0.05) -25px 25px;
     @media screen and (max-width: 769px) {
-      font-size: .9rem ;
+      font-size: 0.9rem;
       padding: 1.1rem;
       margin: 1rem 1rem;
     }
@@ -148,7 +150,8 @@ footer {
 }
 .container_certification__flex-left img {
   width: 50%;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
   @media screen and (max-width: 769px) {
     width: 100%;
   }
@@ -380,16 +383,16 @@ footer {
       opacity: 0;
     }
     15% {
-      opacity: .1;
+      opacity: 0.1;
     }
     25% {
-      opacity: .2;
+      opacity: 0.2;
     }
     50% {
-      opacity: .4;
+      opacity: 0.4;
     }
     75% {
-      opacity: .7;
+      opacity: 0.7;
     }
     100% {
       opacity: 1;
@@ -403,16 +406,16 @@ footer {
       opacity: 0;
     }
     15% {
-      opacity: .1;
+      opacity: 0.1;
     }
     25% {
-      opacity: .2;
+      opacity: 0.2;
     }
     50% {
-      opacity: .4;
+      opacity: 0.4;
     }
     75% {
-      opacity: .7;
+      opacity: 0.7;
     }
     100% {
       opacity: 1;
@@ -426,16 +429,16 @@ footer {
       opacity: 0;
     }
     15% {
-      opacity: .1;
+      opacity: 0.1;
     }
     25% {
-      opacity: .2;
+      opacity: 0.2;
     }
     50% {
-      opacity: .4;
+      opacity: 0.4;
     }
     75% {
-      opacity: .7;
+      opacity: 0.7;
     }
     100% {
       opacity: 1;
@@ -481,20 +484,18 @@ th {
   font-weight: bold;
   color: #fff;
 }
-@media
-only screen and (min-width: 785px) and (max-width: 950px){
+@media only screen and (min-width: 785px) and (max-width: 950px) {
   .table {
-    font-size: .7em;
+    font-size: 0.7em;
   }
   .table td {
     padding: 0em;
     height: 80px;
   }
 }
-@media
-only screen and (min-width: 320px) and (max-width: 784px){
+@media only screen and (min-width: 320px) and (max-width: 784px) {
   .table {
-    font-size: .7em;
+    font-size: 0.7em;
     margin: 100px 5px;
   }
   .table td {
@@ -513,7 +514,8 @@ only screen and (min-width: 320px) and (max-width: 784px){
     flex-direction: column;
     align-items: center;
   }
-  .lowRes_catalogue_txt, .lowRes_catalogue_btn {
+  .lowRes_catalogue_txt,
+  .lowRes_catalogue_btn {
     padding: 10px 20px;
     margin-bottom: 20px;
   }
@@ -566,11 +568,16 @@ only screen and (min-width: 320px) and (max-width: 784px){
 #bottomSeparator {
   margin-top: 70px;
 }
-#centre_formation {
+#centre_formation,
+#action_formation,
+#calendrier {
   display: flex;
   flex-direction: row;
-  margin-top: 300px;
-  justify-content: center;
+  margin: 200px;
+  @media only screen and (max-width: 784px) {
+    flex-direction: column;
+    margin-left: 50px;
+  }
 }
 .centre {
   &__left h4 {
@@ -580,7 +587,23 @@ only screen and (min-width: 320px) and (max-width: 784px){
   &__left h4 span {
     margin-right: 40px;
   }
-  &__right {
-    margin-top: 80px;
+  &__left li {
+    list-style-type: disc;
+    margin-left: 15px;
   }
+  &__right {
+    margin-top: 70px;
+    margin-left: 40px;
+  }
+}
+.programme_tarifs {
+  margin: 20px; 
+}
+.programme_tarifs li {
+  list-style-type: none;
+}
+.programme_tarifs li:before {
+  content: '\2014';
+  position: absolute;
+  margin-left: -20px;
 }
