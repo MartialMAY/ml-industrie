@@ -8,9 +8,9 @@
       <img src="../../public/logos/logo_mlindustrie.png" />
     </div>
   </header>
-  <main class="container is-fluid">
+  <main class="container is-fluid container_programme">
     <!-- DEBUT DE LA BARRE D'ACCES RAPIDE -->
-    <nav class="navbar" role="navigation" aria-label="main navigation">
+    <nav class="navbar navbar_programme" role="navigation" aria-label="main navigation">
       <hr class="separator" />
       <hr />
       <h3>Accès rapide</h3>
