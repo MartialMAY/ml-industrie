@@ -11,7 +11,7 @@
   <main class="container is-fluid container_programme">
     <!-- DEBUT DE LA BARRE D'ACCES RAPIDE -->
     <nav class="navbar navbar_programme" role="navigation" aria-label="main navigation">
-      <hr class="separator" />
+      <hr class="prog_separator" />
       <hr />
       <h3>Accès rapide</h3>
       <div class="navbar__item">
@@ -29,7 +29,7 @@
           >III. Calendrier prévisionnel</a
         >
       </div>
-      <hr class="separator" id="bottomSeparator" />
+      <hr class="prog_separator" id="bottomSeparator" />
       <hr />
     </nav>
     <!-- FIN DE LA BARRE D'ACCES RAPIDE -->

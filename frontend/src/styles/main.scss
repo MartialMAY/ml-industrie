@@ -547,7 +547,7 @@ only screen and (min-width: 320px) and (max-width: 784px){
 .container_programme {
   flex-direction: column;
 }
-.separator {
+.prog_separator {
   border-top: 1px solid #000;
   margin: 0 auto;
   width: 50%;
@@ -574,11 +574,11 @@ only screen and (min-width: 320px) and (max-width: 784px){
 }
 .centre {
   &__left h4 {
-    margin: 40px 0px;
+    margin: 40px -50px 30px;
     text-transform: uppercase;
   }
   &__left h4 span {
-    margin-right: 20px;
+    margin-right: 40px;
   }
   &__right {
     margin-top: 80px;
