@@ -2,7 +2,7 @@
   <header>
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
-        <a class="navbar-item" href="/">
+        <a class="navbar-item" id="animateLogo" onload="swingOnLoad()" href="/">
           <img src="../../public/logos/logo_mlindustrie.png" />
           <img src="../../public/img/accompagne.png" />
           <hr class="displayHr">
@@ -39,17 +39,16 @@
 
             <div class="navbar-dropdown">
               <a class="navbar-item" href="/programme"> Programme de formation </a>
-              <a class="navbar-item"> Livret Stagiaire </a>
               <hr class="navbar-divider" />
-              <a class="navbar-item"> En savoir plus </a>
+              <a class="navbar-item" href="#footer"> En savoir plus</a>
             </div>
           </div>
         </div>
         <!-- Affichage du titre principal de la page-->
-        <a class="navbar-item">
+        <p class="navbar-item">
           <h1>{{ window.width >= 767 ? societe : '' }}</h1>
           <h2>{{ window.width >= 767 ? titre : '' }}</h2>
-        </a>
+        </p>
         <div class="navbar-end">
           <div class="navbar-item">
             <div class="buttons">
@@ -85,6 +84,7 @@ export default {
     window.addEventListener('resize', this.handleResize)
     this.handleResize()
     this.respNav()
+    this.swingOnLoad()
   },
   unmounted () {
     window.removeEventListener('resize', this.handleResize)
@@ -93,6 +93,10 @@ export default {
     handleResize () {
       this.window.width = window.innerWidth
       this.window.height = window.innerHeight
+    },
+    swingOnLoad () {
+      var element = document.getElementById("animateLogo");
+      element.classList.add('swing')
     },
     respNav () {
       if (this.window.width <= 767) {

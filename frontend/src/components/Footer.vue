@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer">
+  <footer class="footer" id="footer">
     <div class="content has-text-centered">
       <div class="columns">
         <div class="column">
@@ -100,13 +100,16 @@
         </div>
       </div>
     </div>
+    <BackToTop />
   </footer>
 </template>
 
 <script>
 import { mapState } from "vuex";
+import BackToTop from "./BackToTop.vue";
 
 export default {
+  components: { BackToTop },
   computed: {
     ...mapState({
       cataLink: "cataLink",

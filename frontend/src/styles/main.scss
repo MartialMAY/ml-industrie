@@ -2,6 +2,17 @@
 @import "../styles/variables.scss";
 @import "~bulma/css/bulma.css";
 
+
+@font-face {
+  font-family: "Bebas_Neue";
+  src: url(../styles/fonts/BebasNeue-Regular.ttf);
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url(../styles/fonts/Quicksand-VariableFont_wght.ttf);
+}
+
+
 //      GENERAL          //
 
 body {
@@ -36,6 +47,8 @@ li a {
   align-items: center;
   display: flex;
   flex-direction: column;
+  font-family: "Bebas_Neue";
+  font-size: 1.4rem;
 }
 .navbar-item img {
   max-height: 4.75rem;
@@ -54,10 +67,137 @@ li a {
 .navbar-brand {
   flex-direction: column;
   min-height: 5.25rem;
+  &__a {
+    text-decoration: none;
+  }
 }
-.navbar-brand a {
-  text-decoration: none;
+// Gestion de l'animation tremblement au survol du header logo
+.navbar-brand img:hover {
+  -webkit-animation-name: wiggle;
+  -ms-animation-name: wiggle;
+  -ms-animation-duration: 1000ms;
+  -webkit-animation-duration: 1000ms;
+  -webkit-animation-iteration-count: 1;
+  -ms-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in-out;
+  -ms-animation-timing-function: ease-in-out;
 }
+
+@-webkit-keyframes wiggle {
+  0% {
+    -webkit-transform: rotate(10deg);
+  }
+  25% {
+    -webkit-transform: rotate(-10deg);
+  }
+  50% {
+    -webkit-transform: rotate(20deg);
+  }
+  75% {
+    -webkit-transform: rotate(-5deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+  }
+}
+
+@-ms-keyframes wiggle {
+  0% {
+    -ms-transform: rotate(1deg);
+  }
+  25% {
+    -ms-transform: rotate(-1deg);
+  }
+  50% {
+    -ms-transform: rotate(1.5deg);
+  }
+  75% {
+    -ms-transform: rotate(-5deg);
+  }
+  100% {
+    -ms-transform: rotate(0deg);
+  }
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(10deg);
+  }
+  25% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(20deg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+// Fin de l'animation header logo
+
+// Gestion du déplacement latéral du header logo au chargement
+.swing {
+  -webkit-animation: swing 1s ease;
+  animation: swing 1s ease;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+@-webkit-keyframes swing {
+  15% {
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px);
+  }
+  30% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+  50% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+  }
+  65% {
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+  }
+  80% {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes swing {
+  15% {
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px);
+  }
+  30% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+  50% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+  }
+  65% {
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+  }
+  80% {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+// Fin de l'animation déplacement latéral
 .navbar-menu {
   align-items: center;
 }
@@ -111,7 +251,8 @@ footer {
 }
 .title {
   text-align: center;
-  color: #000;
+  color: #fff;
+  font-family: "Quicksand";
 }
 .container {
   display: flex;
@@ -597,13 +738,59 @@ th {
   }
 }
 .programme_tarifs {
-  margin: 20px; 
+  margin: 20px;
 }
 .programme_tarifs li {
   list-style-type: none;
 }
 .programme_tarifs li:before {
-  content: '\2014';
+  content: "\2014";
   position: absolute;
   margin-left: -20px;
+}
+
+//    BACKTOTOP   //
+
+.back-to-top-btn {
+  position: fixed;
+  cursor: pointer;
+  bottom: -100px;
+  right: 20px;
+  color: #ffffff;
+  background-color: #6faeb9;
+  z-index: 4;
+  width: 45px;
+  text-align: center;
+  height: 45px;
+  opacity: 0;
+  visibility: hidden;
+  border-radius: 50%;
+  font-size: 22px;
+  transition: 0.6s;
+  overflow: hidden;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+
+  i {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 45%;
+    transform: translateY(-45%);
+    text-align: center;
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &.go-top {
+    opacity: 1;
+    visibility: visible;
+    bottom: 50px;
+  }
+  &:hover {
+    background-color: #6faeb9;
+    color: #ffffff;
+    transition: 0.6s;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+    transform: translateY(-5px);
+  }
 }
