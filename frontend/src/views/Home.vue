@@ -7,6 +7,7 @@
     <!--Affichage de l'encart de présentation + certification-->
     <div class="hero-body">
       <h1 class="title">Une entreprise de confiance</h1>
+      <hr class="accessory">
       <div class="container container_certification">
         <div class="container_certification__flex-left">
           <img src="../../public/img/certification_qualiopi.png" />

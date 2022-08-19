@@ -30,9 +30,9 @@
         :class="active ? 'is-active' : ''"
       >
         <div class="navbar-start">
-          <a class="navbar-item"> Accueil </a>
+          <a class="navbar-item hoverEffect"> Accueil </a>
 
-          <a class="navbar-item" href="/catalogue"> Catalogue </a>
+          <a class="navbar-item hoverEffect" href="/catalogue"> Catalogue </a>
 
           <div class="navbar-item has-dropdown is-hoverable">
             <a class="navbar-link"> Plus </a>
@@ -45,7 +45,7 @@
           </div>
         </div>
         <!-- Affichage du titre principal de la page-->
-        <p class="navbar-item">
+        <p class="navbar-item hoverEffect">
           <h1>{{ window.width >= 767 ? societe : '' }}</h1>
           <h2>{{ window.width >= 767 ? titre : '' }}</h2>
         </p>

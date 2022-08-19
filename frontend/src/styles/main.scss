@@ -1,7 +1,7 @@
 @import "../styles/mixins.scss";
 @import "../styles/variables.scss";
 @import "~bulma/css/bulma.css";
-
+@import "../frontend/node_modules/compass-mixins/lib/compass/css3/";
 
 @font-face {
   font-family: "Bebas_Neue";
@@ -16,7 +16,6 @@
   src: url(../styles/fonts/Montserrat-VariableFont_wght.ttf);
 }
 
-
 //      GENERAL          //
 
 body {
@@ -29,7 +28,8 @@ li a {
   color: #3d3c3c;
   //margin-right: 30px;
 }
-li, p {
+li,
+p {
   font-family: "Montserrat";
 }
 
@@ -79,6 +79,25 @@ li, p {
     text-decoration: none;
   }
 }
+// Gestion de l'effet de hover soulignement
+.hoverEffect:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #000;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.hoverEffect:hover:after {
+  width: 100%;
+  left: 0;
+}
+// Fin de l'effet de hover soulignement
+
 // Gestion de l'animation tremblement au survol du header logo
 .navbar-brand img:hover {
   -webkit-animation-name: wiggle;
@@ -243,12 +262,7 @@ footer {
 
 .hero {
   color: #fff;
-  background: radial-gradient(
-    circle,
-    rgb(42, 97, 107) 16%,
-    rgb(76, 127, 138) 50%,
-    rgba(40, 88, 97, 1) 98%
-  );
+  background: $blue_background;
   background-color: #000;
 }
 .hero.is-medium .hero-body {
@@ -257,10 +271,42 @@ footer {
     padding: 1.5rem 1.5rem;
   }
 }
+.hero-body {
+  position: relative;
+}
+.accessory {
+  height: 6px;
+  background-image: radial-gradient(
+    closest-side,
+    hsla(0, 0%, 50%, 1.0),
+    hsla(0, 0%, 50%, 0) 100%);
+  position: relative;
+  margin-bottom: 100px;
+}
+.accessory:after {
+  position: absolute;
+  top:  50%;
+  left: 50%;
+  display:block;
+  background-color: hsl(0, 0%, 75%);
+  height: 12px;
+  width:  12px;
+  transform: rotate(45deg);
+  margin-top:  -10px;
+  margin-left: -10px;
+  border-radius: 4px 0;
+  border: 4px solid hsla(0, 0%, 100%, 0.35);
+  background-clip: padding-box;
+  box-shadow: -10px 10px 0 hsla(0, 0%, 100%, 0.15), 10px -10px 0 hsla(0, 0%, 100%, 0.15);
+}
 .title {
+  margin-top: 40px;
   text-align: center;
   color: #fff;
   font-family: "Quicksand";
+}
+.title:not(:last-child) {
+  margin-bottom: 7rem;
 }
 .container {
   display: flex;
@@ -300,6 +346,7 @@ footer {
 }
 .container_certification__flex-left img {
   width: 50%;
+  margin-bottom: 30px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
   @media screen and (max-width: 769px) {
