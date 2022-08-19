@@ -11,6 +11,10 @@
   font-family: "Quicksand";
   src: url(../styles/fonts/Quicksand-VariableFont_wght.ttf);
 }
+@font-face {
+  font-family: "Montserrat";
+  src: url(../styles/fonts/Montserrat-VariableFont_wght.ttf);
+}
 
 
 //      GENERAL          //
@@ -24,6 +28,9 @@ li {
 li a {
   color: #3d3c3c;
   //margin-right: 30px;
+}
+li, p {
+  font-family: "Montserrat";
 }
 
 //      APP.VUE           //
@@ -43,9 +50,10 @@ li a {
   background-color: #c0c4c2;
   min-height: 6.25rem;
 }
+#navbarHeader:nth-child(2) {
+  margin-right: 150px;
+}
 .navbar-item {
-  align-items: center;
-  display: flex;
   flex-direction: column;
   font-family: "Bebas_Neue";
   font-size: 1.4rem;
@@ -235,13 +243,13 @@ footer {
 
 .hero {
   color: #fff;
-  background: rgb(83, 139, 149);
   background: radial-gradient(
     circle,
-    rgba(83, 139, 149, 1) 16%,
-    rgba(52, 120, 134, 1) 50%,
+    rgb(42, 97, 107) 16%,
+    rgb(76, 127, 138) 50%,
     rgba(40, 88, 97, 1) 98%
   );
+  background-color: #000;
 }
 .hero.is-medium .hero-body {
   padding: 2rem 4.5rem;
@@ -263,6 +271,7 @@ footer {
 }
 .container_certification {
   flex-direction: column;
+  font-weight: 600;
   &__flex-left {
     display: flex;
     justify-content: center;
@@ -326,6 +335,10 @@ footer {
 }
 .flex_txt {
   @include displayMenus;
+}
+.flex_txt li {
+  font-size: 20px;
+  font-weight: 600;
 }
 .flex_txt img {
   border-radius: 10px;

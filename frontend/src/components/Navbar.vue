@@ -15,7 +15,7 @@
           :class="active ? 'is-active' : ''"
           aria-label="menu"
           aria-expanded="false"
-          data-target="navbarBasicExample"
+          data-target="navbarHeader"
           @click="showMobilemenu"
         >
           <span aria-hidden="true"></span>
@@ -25,7 +25,7 @@
       </div>
 
       <div
-        id="navbarBasicExample"
+        id="navbarHeader"
         class="navbar-menu"
         :class="active ? 'is-active' : ''"
       >
@@ -49,6 +49,7 @@
           <h1>{{ window.width >= 767 ? societe : '' }}</h1>
           <h2>{{ window.width >= 767 ? titre : '' }}</h2>
         </p>
+        <!-- Fin -->
         <div class="navbar-end">
           <div class="navbar-item">
             <div class="buttons">
