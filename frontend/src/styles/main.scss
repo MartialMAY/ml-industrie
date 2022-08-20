@@ -1,5 +1,6 @@
 @import "../styles/mixins.scss";
 @import "../styles/variables.scss";
+@import "../styles/animations.scss";
 @import "~bulma/css/bulma.css";
 @import "../frontend/node_modules/compass-mixins/lib/compass/css3/";
 
@@ -79,152 +80,7 @@ p {
     text-decoration: none;
   }
 }
-// Gestion de l'effet de hover soulignement
-.hoverEffect:after {
-  background: none repeat scroll 0 0 transparent;
-  bottom: 0;
-  content: "";
-  display: block;
-  height: 2px;
-  left: 50%;
-  position: absolute;
-  background: #000;
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 0;
-}
-.hoverEffect:hover:after {
-  width: 100%;
-  left: 0;
-}
-// Fin de l'effet de hover soulignement
 
-// Gestion de l'animation tremblement au survol du header logo
-.navbar-brand img:hover {
-  -webkit-animation-name: wiggle;
-  -ms-animation-name: wiggle;
-  -ms-animation-duration: 1000ms;
-  -webkit-animation-duration: 1000ms;
-  -webkit-animation-iteration-count: 1;
-  -ms-animation-iteration-count: 1;
-  -webkit-animation-timing-function: ease-in-out;
-  -ms-animation-timing-function: ease-in-out;
-}
-
-@-webkit-keyframes wiggle {
-  0% {
-    -webkit-transform: rotate(10deg);
-  }
-  25% {
-    -webkit-transform: rotate(-10deg);
-  }
-  50% {
-    -webkit-transform: rotate(20deg);
-  }
-  75% {
-    -webkit-transform: rotate(-5deg);
-  }
-  100% {
-    -webkit-transform: rotate(0deg);
-  }
-}
-
-@-ms-keyframes wiggle {
-  0% {
-    -ms-transform: rotate(1deg);
-  }
-  25% {
-    -ms-transform: rotate(-1deg);
-  }
-  50% {
-    -ms-transform: rotate(1.5deg);
-  }
-  75% {
-    -ms-transform: rotate(-5deg);
-  }
-  100% {
-    -ms-transform: rotate(0deg);
-  }
-}
-
-@keyframes wiggle {
-  0% {
-    transform: rotate(10deg);
-  }
-  25% {
-    transform: rotate(-10deg);
-  }
-  50% {
-    transform: rotate(20deg);
-  }
-  75% {
-    transform: rotate(-5deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
-// Fin de l'animation header logo
-
-// Gestion du déplacement latéral du header logo au chargement
-.swing {
-  -webkit-animation: swing 1s ease;
-  animation: swing 1s ease;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-}
-@-webkit-keyframes swing {
-  15% {
-    -webkit-transform: translateX(5px);
-    transform: translateX(5px);
-  }
-  30% {
-    -webkit-transform: translateX(-5px);
-    transform: translateX(-5px);
-  }
-  50% {
-    -webkit-transform: translateX(3px);
-    transform: translateX(3px);
-  }
-  65% {
-    -webkit-transform: translateX(-3px);
-    transform: translateX(-3px);
-  }
-  80% {
-    -webkit-transform: translateX(2px);
-    transform: translateX(2px);
-  }
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-}
-@keyframes swing {
-  15% {
-    -webkit-transform: translateX(5px);
-    transform: translateX(5px);
-  }
-  30% {
-    -webkit-transform: translateX(-5px);
-    transform: translateX(-5px);
-  }
-  50% {
-    -webkit-transform: translateX(3px);
-    transform: translateX(3px);
-  }
-  65% {
-    -webkit-transform: translateX(-3px);
-    transform: translateX(-3px);
-  }
-  80% {
-    -webkit-transform: translateX(2px);
-    transform: translateX(2px);
-  }
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-}
-// Fin de l'animation déplacement latéral
 .navbar-menu {
   align-items: center;
 }
@@ -278,26 +134,28 @@ footer {
   height: 6px;
   background-image: radial-gradient(
     closest-side,
-    hsla(0, 0%, 50%, 1.0),
-    hsla(0, 0%, 50%, 0) 100%);
+    hsla(0, 0%, 50%, 1),
+    hsla(0, 0%, 50%, 0) 100%
+  );
   position: relative;
   margin-bottom: 100px;
 }
 .accessory:after {
   position: absolute;
-  top:  50%;
+  top: 50%;
   left: 50%;
-  display:block;
+  display: block;
   background-color: hsl(0, 0%, 75%);
   height: 12px;
-  width:  12px;
+  width: 12px;
   transform: rotate(45deg);
-  margin-top:  -10px;
+  margin-top: -10px;
   margin-left: -10px;
   border-radius: 4px 0;
   border: 4px solid hsla(0, 0%, 100%, 0.35);
   background-clip: padding-box;
-  box-shadow: -10px 10px 0 hsla(0, 0%, 100%, 0.15), 10px -10px 0 hsla(0, 0%, 100%, 0.15);
+  box-shadow: -10px 10px 0 hsla(0, 0%, 100%, 0.15),
+    10px -10px 0 hsla(0, 0%, 100%, 0.15);
 }
 .title {
   margin-top: 40px;
@@ -505,146 +363,6 @@ footer {
   height: 24px;
   width: 6px;
   right: 20px;
-}
-// Gestion de l'animation du séparateur fléché horizontal
-.animateArrow {
-  animation-name: animateArrow;
-  animation-duration: 3s;
-  animation-timing-function: linear;
-  animation-fill-mode: forwards;
-  @keyframes animateArrow {
-    0% {
-      width: 0%;
-      transform: scale(var(--ggs, 5));
-    }
-    50% {
-      width: 25%;
-      transform: scale(var(--ggs, 6));
-    }
-    75% {
-      width: 50%;
-      transform: scale(var(--ggs, 7));
-    }
-    100% {
-      width: 90%;
-      transform: scale(var(--ggs, 8));
-    }
-  }
-}
-// Gestion de l'animation du séparateur fléché vertical
-@media screen and (min-width: 700px) and (max-width: 900px) {
-  .animateArrowDown {
-    animation: animateArrowDown 3s linear forwards;
-
-    @keyframes animateArrowDown {
-      0% {
-        height: 0%;
-        transform: scale(var(--ggs, 5));
-      }
-      50% {
-        height: 25%;
-        width: 10%;
-        transform: scale(var(--ggs, 7));
-      }
-      100% {
-        height: 68.1%;
-        width: 21.5%;
-        transform: scale(var(--ggs, 8));
-      }
-    }
-  }
-}
-@media screen and (min-width: 1072px) {
-  .animateArrowDown {
-    animation: animateArrowDown 3s linear forwards;
-
-    @keyframes animateArrowDown {
-      0% {
-        height: 0%;
-        transform: scale(var(--ggs, 5));
-      }
-      50% {
-        height: 25%;
-        width: 10%;
-        transform: scale(var(--ggs, 7));
-      }
-      100% {
-        height: 44%;
-        width: 20%;
-        transform: scale(var(--ggs, 8.5));
-      }
-    }
-  }
-}
-// Gestion de l'animation de l'affichage du texte
-#firstParagraph {
-  animation: paragraph 3s;
-  @keyframes paragraph {
-    0% {
-      opacity: 0;
-    }
-    15% {
-      opacity: 0.1;
-    }
-    25% {
-      opacity: 0.2;
-    }
-    50% {
-      opacity: 0.4;
-    }
-    75% {
-      opacity: 0.7;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-}
-#secondParagraph {
-  animation: paragraph2 3s;
-  @keyframes paragraph2 {
-    0% {
-      opacity: 0;
-    }
-    15% {
-      opacity: 0.1;
-    }
-    25% {
-      opacity: 0.2;
-    }
-    50% {
-      opacity: 0.4;
-    }
-    75% {
-      opacity: 0.7;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-}
-#thirdParagraph {
-  animation: paragraph3 3s;
-  @keyframes paragraph3 {
-    0% {
-      opacity: 0;
-    }
-    15% {
-      opacity: 0.1;
-    }
-    25% {
-      opacity: 0.2;
-    }
-    50% {
-      opacity: 0.4;
-    }
-    75% {
-      opacity: 0.7;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
 }
 
 //     CATALOGUE.VUE        //

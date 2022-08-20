@@ -6,8 +6,8 @@
     ><i id="rightArrow" class="gg-arrow-long-down animateDown"></i>
     <!--Affichage de l'encart de présentation + certification-->
     <div class="hero-body">
-      <h1 class="title">Une entreprise de confiance</h1>
-      <hr class="accessory">
+      <h1 class="title" onload="bgHover()">Une entreprise de confiance</h1>
+      <hr class="accessory" />
       <div class="container container_certification">
         <div class="container_certification__flex-left">
           <img src="../../public/img/certification_qualiopi.png" />
@@ -30,7 +30,7 @@
   <!--Fin de l'affichage de l'encart de présentation + certification-->
   <section class="hero is-medium is-bold" id="section_formations">
     <div class="hero-body">
-      <div class="container cont_formations">
+      <div class="container cont_formations reveal fade-bottom">
         <div class="flex_txt">
           <h1 class="title">Nos formations techniques</h1>
           <a>
@@ -63,7 +63,7 @@
   <!-- Début de la section atouts-->
   <section class="hero is-medium is-bold" id="section_atouts">
     <div class="hero-body">
-      <div class="container cont_formations" id="container_formations">
+      <div class="container cont_formations reveal fade-bottom" id="container_formations">
         <div id="img_container">
           <a>
             <img class="flex_img" src="../../public/img/atouts2.png" />
@@ -91,7 +91,7 @@
   <!-- Début de la section formateurs-->
   <section class="hero is-medium is-bold" id="section_formateurs">
     <div class="hero-body">
-      <div class="container cont_formations" id="container_formations">
+      <div class="container cont_formations reveal fade-bottom" id="container_formations">
         <div class="flex_txt" id="formateurs">
           <h1 class="title">Nos formateurs</h1>
           <a>
@@ -119,7 +119,7 @@
   <!-- Début de la section certifications-->
   <section class="hero is-medium is-bold" id="section_certifications">
     <div class="hero-body">
-      <div class="container cont_formations" id="container_formations">
+      <div class="container cont_formations reveal fade-bottom" id="container_formations">
         <div id="img_container">
           <a>
             <img class="flex_img" src="../../public/img/certifications2.png" />
@@ -165,15 +165,18 @@ export default {
   },
   created() {
     window.addEventListener("scroll", this.pageScroll);
+    window.addEventListener("scroll", this.reveal);
   },
   unmounted() {
     window.removeEventListener("scroll", this.pageScroll);
     window.removeEventListener("resize", this.handleResize);
   },
   mounted() {
-    this.typeWriter1(), window.addEventListener("resize", this.handleResize);
+    this.typeWriter1(), //window.addEventListener("resize", this.handleResize);
     this.handleResize();
     this.respNav();
+    this.reveal();
+    this.bgHover();
   },
   methods: {
     pageScroll() {
@@ -189,6 +192,25 @@ export default {
     handleResize() {
       this.window.width = window.innerWidth;
       this.window.height = window.innerHeight;
+    },
+    bgHover() {
+      var title_effect = document.querySelector(".title");
+      title_effect.classList.add('bgHover')
+    },      
+    reveal() {
+      var reveals = document.querySelectorAll(".reveal");
+
+      for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        var elementVisible = 150;
+
+        if (elementTop < windowHeight - elementVisible) {
+          reveals[i].classList.add("active");
+        } else {
+          reveals[i].classList.remove("active");
+        }
+      }
     },
     //Si la résolution est trop faible, les flêches seront retirées de l'affichage
     respNav() {
