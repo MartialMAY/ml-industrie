@@ -2,8 +2,7 @@ const nodemailer = require("nodemailer");
 const hbs = require("nodemailer-express-handlebars");
 
 let transporter = nodemailer.createTransport({
-  service: "outlook",
-  secure: false,
+  service: "hotmail",
   auth: {
     user: process.env.OUTLOOK_EMAIL,
     pass: process.env.OUTLOOK_PASSWORD,
@@ -15,14 +14,13 @@ let transporter = nodemailer.createTransport({
 const handlebarOptions = {
   viewEngine: {
     extName: ".handlebars",
-    partialsDir: "views/patials",
-    layoutsDir: "views/layouts",
+    partialsDir: "./views/patials",
+    layoutsDir: "./views/layouts",
     defaultLayout: "",
   },
-  viewPath: "views/templates",
+  viewPath: "./views/templates",
   extName: ".handlebars",
 };
-transporter.use("compile", hbs(handlebarOptions));
 
 exports.welcomeMail = (email, name) =>
   transporter.sendMail({
@@ -34,3 +32,5 @@ exports.welcomeMail = (email, name) =>
       user: name,
     },
   });
+
+transporter.use("compile", hbs(handlebarOptions));
