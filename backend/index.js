@@ -23,3 +23,4 @@ app.listen(port, () => {
 });
 
 require("./api/config/db")(app);
+require('../backend/api/routeHandler')(app);
