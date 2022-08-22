@@ -13,7 +13,7 @@ exports.registerNewUser = async (req, res) => {
         }
 
         res.status(200).json({
-            msg: "Welcome Onboard",
+            msg: "Bienvenue chez Mlindustrie !",
             data: addedUser
         })
     } catch (err) {
