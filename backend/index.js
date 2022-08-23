@@ -11,6 +11,10 @@ app.use(morgan("dev"));
 app.use(cors());
 app.use(bodyParser.json());
 
+app.set('view engine', 'handlebars');
+
+app.use(express.static('images'))
+
 app.get("/", (req, res) => {
   res.json({
     message: "Vue Mailer Application ?? ",

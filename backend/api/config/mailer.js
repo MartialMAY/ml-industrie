@@ -14,7 +14,7 @@ let transporter = nodemailer.createTransport({
 const handlebarOptions = {
   viewEngine: {
     extName: ".handlebars",
-    partialsDir: "./views/patials",
+    partialsDir: "./views/partials",
     layoutsDir: "./views/layouts",
     defaultLayout: "",
   },
@@ -24,10 +24,10 @@ const handlebarOptions = {
 
 exports.welcomeMail = (email, name) =>
   transporter.sendMail({
-    from: "Vue Mailer",
+    from: "dasyx66@hotmail.fr",
     to: email,
-    subject: "Account Creation",
-    template: "welcome",
+    subject: "Création de compte MLindustrie",
+    template: "bienvenue",
     context: {
       user: name,
     },

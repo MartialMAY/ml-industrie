@@ -30,7 +30,7 @@
         :class="active ? 'is-active' : ''"
       >
         <div class="navbar-start">
-          <a class="navbar-item hoverEffect"> Accueil </a>
+          <a class="navbar-item hoverEffect" href="/"> Accueil </a>
 
           <a class="navbar-item hoverEffect" href="/catalogue"> Catalogue </a>
 

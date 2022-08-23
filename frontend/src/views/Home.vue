@@ -223,15 +223,15 @@ export default {
       const v = this;
       setTimeout(function () {
         v.firstParagraph =
-          "La Société ML INDUSTRIE a été créée en 2019 et est implantée actuellement sur les régions rouennaise et lyonnaise.";
+          "ML INDUSTRIE a été créée en 2019 et est implantée actuellement sur les régions rouennaise et lyonnaise.";
       }, 1000);
       setTimeout(function () {
         v.secondParagraph =
-          "Elle collabore avec 10 formateurs dans plusieurs domaines techniques.";
+          "La société collabore avec 10 formateurs dans plusieurs domaines techniques.";
       }, 2000);
       setTimeout(function () {
         v.thirdParagraph =
-          "En plein essor et avec 20 formations à son catalogue, elle forme environ 140 stagiaires par an et a vu son chiffre d'affaires s'élever à 130 K€ en deux ans seulement.";
+          "Investie et en plein essor avec 20 formations à son catalogue, elle forme environ 140 stagiaires par an et a vu son chiffre d'affaires s'élever à 130 K€ en deux ans seulement.";
       }, 3000);
     },
   },
