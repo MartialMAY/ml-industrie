@@ -53,7 +53,7 @@
         <div class="navbar-end">
           <div class="navbar-item">
             <div class="buttons">
-              <a class="button is-primary" id="btn-inscription">
+              <a class="button is-primary" id="btn-inscription" href="/signin">
                 <strong>S'inscrire</strong>
               </a>
               <a class="button is-light"> Se connecter </a>

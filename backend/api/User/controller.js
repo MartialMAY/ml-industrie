@@ -1,5 +1,8 @@
 let User = require("./model");
 let mailer = require("../config/mailer");
+
+// Middleware qui gère l'enregistrement d'un nouvel utilisateur dans la base de données
+// Et lui envoie un mail de bienvenue
 exports.registerNewUser = async (req, res) => {
     try {
         let user = new User({

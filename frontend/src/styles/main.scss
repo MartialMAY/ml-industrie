@@ -554,3 +554,37 @@ th {
     transform: translateY(-5px);
   }
 }
+
+//   SIGNIN    //
+
+form {
+  margin: 0 auto;
+  margin-top: 100px;
+  //background: $background_low_contrast;
+  border-radius: 20px;
+  box-shadow: 5px 6px 5px;
+  padding: 2rem;
+  width: 550px;
+  @media screen and (min-width: 320px) and (max-width: 375px){
+    width: 300px;
+    padding: 1.2rem;
+  }
+  @media screen and (min-width: 376px) and (max-width: 425px) {
+    width: 360px;
+    padding: 1rem;
+  }
+  @media screen and (min-width: 426px) and (max-width: 768px){
+    width: 420px;
+    padding: 2rem;
+  }
+}
+.form_header {
+  text-align: center;
+  margin-bottom: 100px;
+}
+.field {
+  padding: 10px;
+}
+.field.is-grouped {
+  justify-content: center;
+}
