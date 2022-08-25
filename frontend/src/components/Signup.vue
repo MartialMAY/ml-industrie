@@ -1,4 +1,5 @@
 <template>
+<Navbar /> 
   <form @submit.prevent="registerUser">
     <div class="form_header">
       <p>Formulaire d'inscription</p>
@@ -72,9 +73,12 @@
 </template>
 
 <script>
+import Navbar from '../components/Navbar.vue'
 import axios from "axios";
+import store from "../modules/store.json";
 
 export default {
+  components: { Navbar },
   data() {
     return {
       user: {
@@ -87,21 +91,29 @@ export default {
   },
 
   methods: {
-    async registerUser() {
+    registerUser() {
       this.loader = true;
-      try {
-        debugger;
-        let response = await axios.post(
-          "http://localhost:4000/user",
-          this.user
-        );
-        console.log(response);
-        alert("Utilisateur enregistré avec succès");
-        this.loader = false;
-      } catch (err) {
-        alert("Quelque chose s'est mal passé");
-        this.loader = false;
-      }
+
+      axios
+        .post(store.api_host + "/user/", {
+          name: this.user.name,
+          email: this.user.email,
+          phone: this.user.phone,
+        })
+        .then((response) => {
+          if (response.status === 200 || response.status === 201) {
+            return response;
+          } else {
+            console.log("Erreur d'envoi de formulaire");
+          }
+        })
+        .then((response) => {
+          console.log(response);
+          //Envoi vers la page utilisateur connecté
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
     },
   },
 };

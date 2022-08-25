@@ -4,7 +4,7 @@ import Catalogue from '../views/Catalogue.vue'
 import Programme from '../views/Programme.vue'
 import Header from '../components/Header.vue'
 import Footer from '../components/Footer.vue'
-import Signin from '../components/Signin.vue'
+import Signup from '../components/Signup.vue'
 import Login from '../components/Login.vue'
 import PdfFileComponent from "../components/PdfFileComponent.vue";
 
@@ -35,9 +35,9 @@ const routes = [
     component: Footer
   },
   {
-    path: '/signin',
-    name: 'Signin',
-    component: Signin
+    path: '/signup',
+    name: 'Signup',
+    component: Signup
   },
   {
     path: '/login',

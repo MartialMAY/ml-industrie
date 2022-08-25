@@ -1,4 +1,5 @@
 <template>
+<Navbar /> 
   <header class="prog_header">
     <div class="prog_header__title">
       <h1>Programme de formation</h1>
@@ -234,7 +235,10 @@
 </template>
 
 <script>
+import Navbar from '../components/Navbar.vue'
+
 export default {
+  components: { Navbar },
   data() {
     return {
       societe: "ML INDUSTRIE",
