@@ -95,7 +95,7 @@ export default {
       this.loader = true;
 
       axios
-        .post(store.api_host + "/user/", {
+        .post(store.api_host + "/user", {
           name: this.user.name,
           email: this.user.email,
           phone: this.user.phone,
