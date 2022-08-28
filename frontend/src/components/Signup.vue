@@ -1,5 +1,5 @@
 <template>
-<Navbar /> 
+  <Navbar />
   <form @submit.prevent="registerUser">
     <div class="form_header">
       <p>Formulaire d'inscription</p>
@@ -39,13 +39,32 @@
     </div>
 
     <div class="field">
-      <label for="email" class="label">Téléphone</label>
+      <label for="phone" class="label">Téléphone</label>
       <div class="control has-icons-left has-icons-right">
         <input
-          v-model="user.phone"
           class="input"
           type="text"
-          placeholder="Veuillez saisir votre numéro de téléphone"
+          v-model="user.phone"
+          id="phone"
+          name="phone"
+          placeholder="Veuillez saisir votre numéro de téléph"
+        />
+        <span class="icon is-small is-left">
+          <i class="fas fa-phone"></i>
+        </span>
+      </div>
+    </div>
+
+    <div class="field">
+      <label for="password" class="label">Mot de passe</label>
+      <div class="control has-icons-left has-icons-right">
+        <input
+          class="input"
+          type="text"
+          v-model="user.password"
+          id="password"
+          name="password"
+          placeholder="Veuillez créer votre mot de passe"
         />
         <span class="icon is-small is-left">
           <i class="fas fa-phone"></i>
@@ -73,7 +92,7 @@
 </template>
 
 <script>
-import Navbar from '../components/Navbar.vue'
+import Navbar from "../components/Navbar.vue";
 import axios from "axios";
 import store from "../modules/store.json";
 
@@ -85,6 +104,7 @@ export default {
         name: "",
         email: "",
         phone: "",
+        password: ""
       },
       loader: false,
     };
@@ -98,7 +118,8 @@ export default {
         .post(store.api_host + "/user", {
           name: this.user.name,
           email: this.user.email,
-          phone: this.user.phone,
+          password: this.user.password,
+          phone: this.user.phone
         })
         .then((response) => {
           if (response.status === 200 || response.status === 201) {

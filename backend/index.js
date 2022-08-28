@@ -55,9 +55,11 @@ app.listen(port, () => {
   console.log(`listening on ${port}`);
 });
 
-// Récupération et gestion des routes utilisateurs
-//app.use('/api/user', require('../backend/api/User/routes'));
-
+/* app.get("/", (req, res) => {
+  res.json({
+    message: "Vue Mailer Application ?? "
+  })
+}), */
 // Récupération des informations de connexion à la db mongoose
 require("./api/config/db")(app);
 
