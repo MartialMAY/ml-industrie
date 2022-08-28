@@ -8,30 +8,6 @@ let mailer = require("../config/mailer");
 
 //  USER SIGNUP  //
 
-/* exports.registerNewUser = async (req, res) => {
-  try {
-    let user = new User({
-      name: req.body.name,
-      email: req.body.email,
-      phone: req.body.phone
-    });
-    let addedUser = await user.save();
-    if (addedUser) {
-      mailer.welcomeMail(req.body.email, req.body.name);
-    }
-
-    res.status(201).json({
-      msg: "Bienvenue chez Mlindustrie !",
-      data: addedUser,
-    });
-  } catch (err) {
-    console.log(err);
-    res.status(500).json({
-      error: err
-    })
-  }
-} */
-
 exports.registerNewUser = (req, res, next) => {
   // On appelle la méthode hash de bcrypt qui sera la fonction de cryptage de mot de passe
   // On va lui passer le mdp du corps de la requête passé par le frontend

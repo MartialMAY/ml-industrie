@@ -55,11 +55,6 @@ app.listen(port, () => {
   console.log(`listening on ${port}`);
 });
 
-/* app.get("/", (req, res) => {
-  res.json({
-    message: "Vue Mailer Application ?? "
-  })
-}), */
 // Récupération des informations de connexion à la db mongoose
 require("./api/config/db")(app);
 
