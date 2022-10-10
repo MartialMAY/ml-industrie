@@ -56,35 +56,22 @@
         <div class="column">
           <h6>Mentions Légales</h6>
           <ul>
-            <li><a
-                class="displayDownload"
-                :href="cgvLink"
-                download="fichier"
-                >{{ cgv }}</a
-              ></li>
-            <li><a
-                class="displayDownload"
-                :href="regLink"
-                download="fichier"
-                >{{ reglement }}</a
-              ></li>
-            <li><a
-                class="displayDownload"
-                :href="reggLink"
-                download="fichier"
-                >{{ reglement_g }}</a
-              ></li>
+            <li>
+              <a class="displayDownload" :href="cgvLink" download="fichier">{{
+                cgv
+              }}</a>
+            </li>
+            <li>
+              <a class="displayDownload" :href="regLink" download="fichier">{{
+                reglement
+              }}</a>
+            </li>
+            <li>
+              <a class="displayDownload" :href="reggLink" download="fichier">{{
+                reglement_g
+              }}</a>
+            </li>
           </ul>
-        </div>
-        <div class="column">
-          <h6>Contact</h6>
-          <div class="control has-icons-left has-icons-right">
-            <input class="input is-medium" type="email" placeholder="Email" />
-            <span class="icon is-left">
-              <i class="fa fa-envelope"></i>
-            </span>
-          </div>
-          <a class="button is-success is-rounded" id="subscribe">Envoyer</a>
         </div>
       </div>
     </div>
@@ -117,17 +104,17 @@ export default {
       candidatLink: "candidatLink",
       livretLink: "livretLink",
       progLink: "progLink",
-      cgvLink:"cgvLink",
+      cgvLink: "cgvLink",
       regLink: "regLink",
       reggLink: "reggLink",
       livret: "livret",
       cata: "cata",
       annuaire: "annuaire",
       candidature: "candidature",
-      programme: "programme",
+      //programme: "programme",
       cgv: "cgv",
       reglement: "reglement",
-      reglement_g: "reglement_g"
+      reglement_g: "reglement_g",
     }),
   },
   data() {

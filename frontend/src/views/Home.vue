@@ -32,7 +32,7 @@
     <div class="hero-body">
       <div class="container cont_formations reveal fade-bottom">
         <div class="flex_txt">
-          <h1 class="title">Nos formations techniques</h1>
+          <h2 class="title">Nos formations techniques</h2>
           <a>
             <img src="../../public/img/formations.png" />
           </a>
@@ -63,14 +63,17 @@
   <!-- Début de la section atouts-->
   <section class="hero is-medium is-bold" id="section_atouts">
     <div class="hero-body">
-      <div class="container cont_formations reveal fade-bottom" id="container_formations">
+      <div
+        class="container cont_formations reveal fade-bottom"
+        id="container_formations"
+      >
         <div id="img_container">
           <a>
             <img class="flex_img" src="../../public/img/atouts2.png" />
           </a>
         </div>
         <div class="flex_txt" id="atouts">
-          <h1 class="title">Nos atouts</h1>
+          <h2 class="title">Nos atouts</h2>
           <a>
             <img src="../../public/img/atouts.png" />
           </a>
@@ -91,9 +94,12 @@
   <!-- Début de la section formateurs-->
   <section class="hero is-medium is-bold" id="section_formateurs">
     <div class="hero-body">
-      <div class="container cont_formations reveal fade-bottom" id="container_formations">
+      <div
+        class="container cont_formations reveal fade-bottom"
+        id="container_formations"
+      >
         <div class="flex_txt" id="formateurs">
-          <h1 class="title">Nos formateurs</h1>
+          <h2 class="title">Nos formateurs</h2>
           <a>
             <img src="../../public/img/formateurs.png" />
           </a>
@@ -119,14 +125,17 @@
   <!-- Début de la section certifications-->
   <section class="hero is-medium is-bold" id="section_certifications">
     <div class="hero-body">
-      <div class="container cont_formations reveal fade-bottom" id="container_formations">
+      <div
+        class="container cont_formations reveal fade-bottom"
+        id="container_formations"
+      >
         <div id="img_container">
           <a>
             <img class="flex_img" src="../../public/img/certifications2.png" />
           </a>
         </div>
         <div class="flex_txt" id="certifications">
-          <h1 class="title">Nos certifications</h1>
+          <h2 class="title">Nos certifications</h2>
           <a>
             <img src="../../public/img/certifications.png" />
           </a>
@@ -141,17 +150,39 @@
         </div>
       </div>
     </div>
+    <i class="gg-arrow-long-left animate"></i>
   </section>
-  <!-- Fin de la section atouts-->
+  <!-- Fin de la section certifications-->
+  <!-- Début de la section partenaires-->
+  <section class="hero is-medium is-bold carousel">
+    <input type="radio" name="position" />
+    <input type="radio" name="position" />
+    <input type="radio" name="position" checked/>
+    <input type="radio" name="position" />
+    <input type="radio" name="position" />
+    <div id="carousel">
+      <h2>Nos partenaires</h2>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+    </div>
+  </section>
+  <!-- Fin de la section partenaires-->
   <Footer />
 </template>
 
 <script>
 import Header from "../components/Header.vue";
 import Footer from "../components/Footer.vue";
+
 export default {
   name: "Home",
-  components: { Header, Footer },
+  components: {
+    Header,
+    Footer,
+  },
   data() {
     return {
       firstParagraph: "",
@@ -173,7 +204,7 @@ export default {
   },
   mounted() {
     this.typeWriter1(), //window.addEventListener("resize", this.handleResize);
-    this.handleResize();
+      this.handleResize();
     this.respNav();
     this.reveal();
     this.bgHover();
@@ -195,8 +226,8 @@ export default {
     },
     bgHover() {
       var title_effect = document.querySelector(".title");
-      title_effect.classList.add('bgHover')
-    },      
+      title_effect.classList.add("bgHover");
+    },
     reveal() {
       var reveals = document.querySelectorAll(".reveal");
 
