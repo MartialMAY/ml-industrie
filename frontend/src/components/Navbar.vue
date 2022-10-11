@@ -3,8 +3,8 @@
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <a class="navbar-item" id="animateLogo" onload="swingOnLoad()" href="/">
-          <img src="../../public/logos/logo_mlindustrie.png" />
-          <img src="../../public/img/accompagne.png" />
+          <img src="../../public/logos/logo_mlindustrie.webp" />
+          <img src="../../public/img/accompagne.webp" />
           <hr class="displayHr">
           <h1 id="lowResH1"></h1>
         </a>

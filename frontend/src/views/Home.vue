@@ -10,7 +10,7 @@
       <hr class="accessory" />
       <div class="container container_certification">
         <div class="container_certification__flex-left">
-          <img src="../../public/img/certification_qualiopi.png" />
+          <img src="../../public/img/certification_qualiopi.webp" />
         </div>
         <div class="container_certification__flex-right">
           <p id="firstParagraph">
@@ -34,7 +34,7 @@
         <div class="flex_txt">
           <h2 class="title">Nos formations techniques</h2>
           <a>
-            <img src="../../public/img/formations.png" />
+            <img src="../../public/img/formations.webp" />
           </a>
           <div class="column">
             <ul>
@@ -52,7 +52,7 @@
         </div>
         <div>
           <a>
-            <img class="flex_img" src="../../public/img/formations3.png" />
+            <img class="flex_img" src="../../public/img/formations3.webp" />
           </a>
         </div>
       </div>
@@ -69,13 +69,13 @@
       >
         <div id="img_container">
           <a>
-            <img class="flex_img" src="../../public/img/atouts2.png" />
+            <img class="flex_img" src="../../public/img/atouts2.webp" />
           </a>
         </div>
         <div class="flex_txt" id="atouts">
           <h2 class="title">Nos atouts</h2>
           <a>
-            <img src="../../public/img/atouts.png" />
+            <img src="../../public/img/atouts.webp" />
           </a>
           <div class="column">
             <ul>
@@ -101,7 +101,7 @@
         <div class="flex_txt" id="formateurs">
           <h2 class="title">Nos formateurs</h2>
           <a>
-            <img src="../../public/img/formateurs.png" />
+            <img src="../../public/img/formateurs.webp" />
           </a>
           <div class="column">
             <ul>
@@ -114,7 +114,7 @@
         </div>
         <div id="img_container">
           <a>
-            <img class="flex_img" src="../../public/img/formateurs2.png" />
+            <img class="flex_img" src="../../public/img/formateurs2.webp" />
           </a>
         </div>
       </div>
@@ -131,13 +131,13 @@
       >
         <div id="img_container">
           <a>
-            <img class="flex_img" src="../../public/img/certifications2.png" />
+            <img class="flex_img" src="../../public/img/certifications2.webp" />
           </a>
         </div>
         <div class="flex_txt" id="certifications">
           <h2 class="title">Nos certifications</h2>
           <a>
-            <img src="../../public/img/certifications.png" />
+            <img src="../../public/img/certifications.webp" />
           </a>
           <div class="column">
             <ul>
@@ -157,16 +157,26 @@
   <section class="hero is-medium is-bold carousel">
     <input type="radio" name="position" />
     <input type="radio" name="position" />
-    <input type="radio" name="position" checked/>
+    <input type="radio" name="position" checked />
     <input type="radio" name="position" />
     <input type="radio" name="position" />
     <div id="carousel">
       <h2>Nos partenaires</h2>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
+      <a class="item partner_sef" href="https://www.sef-formation.info" target="_blank">
+        <img src="../../public/logos/sef.webp" />
+      </a>
+      <a class="item partner_bart" href="#" target="_blank">
+        <img src="../../public/logos/bart.webp" />
+      </a>
+      <a class="item partner_asa" href="https://www.asa-conception.fr/" target="_blank">
+        <img src="../../public/logos/asa.webp" />
+      </a>
+      <a class="item partner_phineo" href="https://phineo.co/" target="_blank">
+        <img src="../../public/logos/phineo.webp" />
+      </a>
+      <a class="item partner_dl" href="https://davidlevast.fr" target="_blank">
+        <img src="../../public/logos/logo_davidlevast.webp" />
+      </a>
     </div>
   </section>
   <!-- Fin de la section partenaires-->

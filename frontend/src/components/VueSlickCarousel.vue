@@ -1,10 +1,4 @@
 <template>
-    <div class="slide-1">
-      <p>Slide 1</p>
-      <a class="partner" href="https://www.asa-conception.fr/" target="_blank"
-        >ASA CONCEPTION</a
-      >
-    </div>
     <div class="slide-2">
       <p>Slide 2</p>
       <a class="partner" href="https://phineo.co/" target="_blank">PHINEO</a>

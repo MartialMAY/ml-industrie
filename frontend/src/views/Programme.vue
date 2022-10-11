@@ -6,7 +6,7 @@
       <h2>Mécanique des fluides</h2>
     </div>
     <div class="prog_header__img">
-      <img src="../../public/logos/logo_mlindustrie.png" />
+      <img src="../../public/logos/logo_mlindustrie.webp" />
     </div>
   </header>
   <main class="container is-fluid container_programme">
