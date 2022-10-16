@@ -1,12 +1,13 @@
 import { createWebHistory, createRouter } from 'vue-router'
 import Home from '../views/Home.vue'
-import Catalogue from '../views/Catalogue.vue'
+//import Catalogue from '../views/Catalogue.vue'
 import Programme from '../views/Programme.vue'
 import Header from '../components/Header.vue'
 import Footer from '../components/Footer.vue'
 import Signup from '../components/Signup.vue'
 import Login from '../components/Login.vue'
 import PdfFileComponent from "../components/PdfFileComponent.vue";
+import Maintenance from "../components/Maintenance.vue";
 
 const routes = [
   {
@@ -14,11 +15,11 @@ const routes = [
     name: 'Home',
     component: Home
   },
-  {
+  /* {
     path: '/catalogue',
     name: 'Catalogue',
     component: Catalogue
-  },
+  }, */
   {
     path: '/programme',
     name: 'Programme',
@@ -48,6 +49,11 @@ const routes = [
     path: '/pdf',
     name: 'PdfFileComponent',
     component: PdfFileComponent
+  },
+  {
+    path: '/maintenance',
+    name: 'Maintenance',
+    component: Maintenance
   },
 ]
 const router = createRouter({

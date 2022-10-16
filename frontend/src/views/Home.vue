@@ -33,9 +33,9 @@
       <div class="container cont_formations reveal fade-bottom">
         <div class="flex_txt">
           <h2 class="title">Nos formations techniques</h2>
-          <a>
+          
             <img src="../../public/img/formations.webp" alt="formations" />
-          </a>
+          
           <div class="column">
             <ul>
               <li>Usinage conventionnel</li>
@@ -51,9 +51,9 @@
           </div>
         </div>
         <div>
-          <a>
+          
             <img class="flex_img" src="../../public/img/formations3.webp" alt="texte_formations"/>
-          </a>
+          
         </div>
       </div>
     </div>
@@ -68,15 +68,15 @@
         id="container_formations"
       >
         <div id="img_container">
-          <a>
+          
             <img class="flex_img" src="../../public/img/atouts2.webp" alt="atouts" />
-          </a>
+          
         </div>
         <div class="flex_txt" id="atouts">
           <h2 class="title">Nos atouts</h2>
-          <a>
+          
             <img src="../../public/img/atouts.webp" alt="texte_atouts"/>
-          </a>
+          
           <div class="column">
             <ul>
               <li>Réactif</li>
@@ -100,9 +100,9 @@
       >
         <div class="flex_txt" id="formateurs">
           <h2 class="title">Nos formateurs</h2>
-          <a>
+          
             <img src="../../public/img/formateurs.webp" alt="formateurs" />
-          </a>
+          
           <div class="column">
             <ul>
               <li>Fiables</li>
@@ -113,9 +113,9 @@
           </div>
         </div>
         <div id="img_container">
-          <a>
+          
             <img class="flex_img" src="../../public/img/formateurs2.webp" alt="texte_formateurs"/>
-          </a>
+          
         </div>
       </div>
     </div>
@@ -130,15 +130,15 @@
         id="container_formations"
       >
         <div id="img_container">
-          <a>
+          
             <img class="flex_img" src="../../public/img/certifications2.webp" alt="certifications" />
-          </a>
+          
         </div>
         <div class="flex_txt" id="certifications">
           <h2 class="title">Nos certifications</h2>
-          <a>
+          
             <img src="../../public/img/certifications.webp" alt="texte_certifications" />
-          </a>
+          
           <div class="column">
             <ul>
               <li>Tests</li>
@@ -165,7 +165,7 @@
       <a class="item partner_sef" href="https://www.sef-formation.info" target="_blank">
         <img src="../../public/logos/sef.webp" alt="logo_societe_europeenne_formation" />
       </a>
-      <a class="item partner_bart">
+      <a class="item partner_bart" href="#carousel">
         <img src="../../public/logos/bart.webp" alt="logo_bart_metallerie"/>
       </a>
       <a class="item partner_asa" href="https://www.asa-conception.fr/" target="_blank">
@@ -217,7 +217,7 @@ export default {
   },
   mounted() {
     this.typeWriter1(), //window.addEventListener("resize", this.handleResize);
-      this.handleResize();
+    this.handleResize();
     this.respNav();
     this.reveal();
     this.bgHover();
@@ -265,9 +265,10 @@ export default {
     },
     typeWriter1: function () {
       const v = this;
+      let creaDate = 2019;
       setTimeout(function () {
         v.firstParagraph =
-          "ML INDUSTRIE a été créée en 2019 et est implantée actuellement sur les régions rouennaise et lyonnaise.";
+          "ML INDUSTRIE a été créée en " +  creaDate  + " et est implantée actuellement sur les régions rouennaise et lyonnaise.";
       }, 1000);
       setTimeout(function () {
         v.secondParagraph =

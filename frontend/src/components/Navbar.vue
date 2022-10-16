@@ -32,10 +32,10 @@
         <div class="navbar-start">
           <a class="navbar-item hoverEffect" href="/"> Accueil </a>
 
-          <a class="navbar-item hoverEffect" href="/catalogue"> Catalogue </a>
+          <a class="navbar-item hoverEffect" href="/maintenance"> Catalogue </a>
 
           <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link"> Plus </a>
+            <a class="navbar-link" href="#navbarHeader"> Plus </a>
 
             <div class="navbar-dropdown">
               <a class="navbar-item" href="/programme"> Programme de formation </a>
@@ -56,7 +56,7 @@
               <a class="button is-primary" id="btn-inscription" href="/signup">
                 <strong>S'inscrire</strong>
               </a>
-              <a class="button is-light"> Se connecter </a>
+              <a class="button is-light" href="/signin"> Se connecter </a>
             </div>
           </div>
         </div>

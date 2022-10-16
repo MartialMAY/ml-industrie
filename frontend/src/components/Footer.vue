@@ -105,8 +105,8 @@
             <p>Copyright © MLINDUSTRIE {{ date }}</p>
           </div>
           <div class="column has-text-right">
-            <a href="https://www.linkedin.com/in/matthieu-l-72b265138/"><i class="fa fa-linkedin-square" id="linkedin"></i></a>
-            <a href="mailto:mlindustrie76@gmail.com"><i class="fa-regular fa-envelope-open" id="mail_icon"></i></a>
+            <a href="https://www.linkedin.com/in/matthieu-l-72b265138/" aria-label="Accèder à LinkedIn"><i class="fa fa-linkedin-square" id="linkedin"></i></a>
+            <a href="mailto:mlindustrie76@gmail.com" aria-label="Ecrire un email"><i class="fa-regular fa-envelope-open" id="mail_icon"></i></a>
           </div>
         </div>
       </div>
@@ -132,7 +132,7 @@ export default {
       regLink: "regLink",
       reggLink: "reggLink",
       livret: "livret",
-      cata: "cata",
+      //cata: "cata",
       annuaire: "annuaire",
       candidature: "candidature",
       //programme: "programme",

@@ -27,7 +27,7 @@ li {
 }
 li a {
   color: #3d3c3c;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 li,
 p {
@@ -111,13 +111,6 @@ footer {
   @include fixedBottom;
   padding: 1.2em;
   background-color: #267a89;
-  @media screen and (max-width: 769px) {
-    height: 100px;
-  }
-}
-#subscribe {
-  margin-top: 20px;
-  background-color: #267a89;
 }
 #linkedin {
   font-size: 25px;
@@ -128,7 +121,9 @@ footer {
   font-size: 25px;
   margin-left: 30px;
 }
-
+.columns .has-text-right {
+  margin-right: 50px;
+}
 //     HOME.VUE        //
 
 .hero {
@@ -254,13 +249,13 @@ footer {
   height: auto;
   filter: grayscale(100%) drop-shadow(8px 8px 10px #3d3c3c);
   border-radius: 10px;
-  @media screen and (max-width: 475px) {
+  /* @media screen and (max-width: 475px) {
     height: 12rem;
-  }
-  @media screen and (max-width: 476px) and (max-width: 769px) {
+  } */
+  /* @media screen and (max-width: 476px) and (max-width: 769px) {
     width: 250px;
     height: 150px;
-  }
+  } */
 }
 
 #atouts {
@@ -516,8 +511,10 @@ th {
     margin-left: 40px;
   }
 }
+// Penser à retirer le display none en prod finale //
 .programme_tarifs {
   margin: 20px;
+  display: none;
 }
 .programme_tarifs li {
   list-style-type: none;
