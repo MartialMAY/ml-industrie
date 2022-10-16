@@ -445,7 +445,7 @@
 #carousel {
   margin-top: 50px;
   grid-row: 1 / 2;
-  grid-column: 1 / 8;
+  grid-column: 1 / 9;
   width: 80vw;
   height: 600px;
   display: flex;
@@ -454,7 +454,7 @@
   overflow: hidden;
   transform-style: preserve-3d;
   perspective: 420px;
-  --items: 5;
+  --items: 6;
   --middle: 3;
   --position: 1;
 }
@@ -478,7 +478,7 @@ a.item {
 
 a.item:nth-of-type(1) {
   --offset: 1;
-  background-color: #90f1ef;
+  background-color: #fff;
 }
 a.item:nth-of-type(2) {
   --offset: 2;
@@ -486,7 +486,7 @@ a.item:nth-of-type(2) {
 }
 a.item:nth-of-type(3) {
   --offset: 3;
-  background-color: #ff9770;
+  background-color: #000;
 }
 a.item:nth-of-type(4) {
   --offset: 4;
@@ -494,6 +494,10 @@ a.item:nth-of-type(4) {
 }
 a.item:nth-of-type(5) {
   --offset: 5;
+  background-color: #fff;
+}
+a.item:nth-of-type(6) {
+  --offset: 6;
   background-color: #3452A1;
 }
 .carousel input {
@@ -538,27 +542,25 @@ input:nth-of-type(5) {
 input:nth-of-type(5):checked ~ #carousel {
   --position: 5;
 }
-.partner_asa,
-.partner_phineo,
-.partner_sef,
-.partner_dl {
-  //background-image: url("../../public/logos/asa.webp");
-  pointer-events: auto;
+input:nth-of-type(6) {
+  grid-column: 6 / 7;
+  grid-row: 2 / 3;
+}
+input:nth-of-type(6):checked ~ #carousel {
+  --position: 5;
 }
 .partner_asa img,
+.partner_phineo img,
+.partner_dl img,
+.partner_usinage img {
+  pointer-events: auto;
+  margin-top: 45%;
+}
+.partner_bart img{
+  pointer-events: none;
+  margin-top: 45%;
+}
 .partner_sef img {
-  height: 400px;
-}
-.partner_dl img {
-  margin-top: 35%;
-  height: 160px;
-  background-color: #3452A1;
-}
-.partner_phineo img {
-  margin-top: 25%;
-  height: 200px;
-}
-.partner_bart img {
-  margin-top: 25%;
-  height: 250px;
+  pointer-events: auto;
+  margin-top: 15%;
 }

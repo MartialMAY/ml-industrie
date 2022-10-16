@@ -27,11 +27,14 @@ li {
 }
 li a {
   color: #3d3c3c;
-  //margin-right: 30px;
+  font-size: 1.2rem;
 }
 li,
 p {
   font-family: "Montserrat";
+}
+h3 {
+  font-family: "Quicksand";
 }
 
 //      APP.VUE           //
@@ -98,7 +101,10 @@ footer {
   margin-top: auto;
   background-color: #c0c4c2 !important;
 }
-.content h6 {
+.column {
+  padding: 1.2rem;
+}
+.content h3 {
   margin-left: 25px;
 }
 .copyright {
@@ -112,6 +118,15 @@ footer {
 #subscribe {
   margin-top: 20px;
   background-color: #267a89;
+}
+#linkedin {
+  font-size: 25px;
+  color: #fff;
+}
+#mail_icon {
+  color: #fff;
+  font-size: 25px;
+  margin-left: 30px;
 }
 
 //     HOME.VUE        //

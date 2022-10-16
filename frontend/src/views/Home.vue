@@ -10,7 +10,7 @@
       <hr class="accessory" />
       <div class="container container_certification">
         <div class="container_certification__flex-left">
-          <img src="../../public/img/certification_qualiopi.webp" />
+          <img src="../../public/img/certification_qualiopi.webp" alt="certification_qualiopi" />
         </div>
         <div class="container_certification__flex-right">
           <p id="firstParagraph">
@@ -34,7 +34,7 @@
         <div class="flex_txt">
           <h2 class="title">Nos formations techniques</h2>
           <a>
-            <img src="../../public/img/formations.webp" />
+            <img src="../../public/img/formations.webp" alt="formations" />
           </a>
           <div class="column">
             <ul>
@@ -52,7 +52,7 @@
         </div>
         <div>
           <a>
-            <img class="flex_img" src="../../public/img/formations3.webp" />
+            <img class="flex_img" src="../../public/img/formations3.webp" alt="texte_formations"/>
           </a>
         </div>
       </div>
@@ -69,13 +69,13 @@
       >
         <div id="img_container">
           <a>
-            <img class="flex_img" src="../../public/img/atouts2.webp" />
+            <img class="flex_img" src="../../public/img/atouts2.webp" alt="atouts" />
           </a>
         </div>
         <div class="flex_txt" id="atouts">
           <h2 class="title">Nos atouts</h2>
           <a>
-            <img src="../../public/img/atouts.webp" />
+            <img src="../../public/img/atouts.webp" alt="texte_atouts"/>
           </a>
           <div class="column">
             <ul>
@@ -101,7 +101,7 @@
         <div class="flex_txt" id="formateurs">
           <h2 class="title">Nos formateurs</h2>
           <a>
-            <img src="../../public/img/formateurs.webp" />
+            <img src="../../public/img/formateurs.webp" alt="formateurs" />
           </a>
           <div class="column">
             <ul>
@@ -114,7 +114,7 @@
         </div>
         <div id="img_container">
           <a>
-            <img class="flex_img" src="../../public/img/formateurs2.webp" />
+            <img class="flex_img" src="../../public/img/formateurs2.webp" alt="texte_formateurs"/>
           </a>
         </div>
       </div>
@@ -131,13 +131,13 @@
       >
         <div id="img_container">
           <a>
-            <img class="flex_img" src="../../public/img/certifications2.webp" />
+            <img class="flex_img" src="../../public/img/certifications2.webp" alt="certifications" />
           </a>
         </div>
         <div class="flex_txt" id="certifications">
           <h2 class="title">Nos certifications</h2>
           <a>
-            <img src="../../public/img/certifications.webp" />
+            <img src="../../public/img/certifications.webp" alt="texte_certifications" />
           </a>
           <div class="column">
             <ul>
@@ -155,27 +155,30 @@
   <!-- Fin de la section certifications-->
   <!-- Début de la section partenaires-->
   <section class="hero is-medium is-bold carousel">
-    <input type="radio" name="position" />
-    <input type="radio" name="position" />
-    <input type="radio" name="position" checked />
-    <input type="radio" name="position" />
-    <input type="radio" name="position" />
+    <input for="position1" type="radio" name="position" id="position1" aria-label="position1"/>
+    <input for="position2" type="radio" name="position" id="position2" aria-label="position2"/>
+    <input for="position3" type="radio" name="position" id="position3" aria-label="position3" checked/>
+    <input for="position4" type="radio" name="position" id="position4" aria-label="position4"/>
+    <input for="position5" type="radio" name="position" id="position5" aria-label="position5"/>
     <div id="carousel">
       <h2>Nos partenaires</h2>
       <a class="item partner_sef" href="https://www.sef-formation.info" target="_blank">
-        <img src="../../public/logos/sef.webp" />
+        <img src="../../public/logos/sef.webp" alt="logo_societe_europeenne_formation" />
       </a>
-      <a class="item partner_bart" href="#" target="_blank">
-        <img src="../../public/logos/bart.webp" />
+      <a class="item partner_bart">
+        <img src="../../public/logos/bart.webp" alt="logo_bart_metallerie"/>
       </a>
       <a class="item partner_asa" href="https://www.asa-conception.fr/" target="_blank">
-        <img src="../../public/logos/asa.webp" />
+        <img src="../../public/logos/asa.webp" alt="logo_asa_conception"/>
       </a>
       <a class="item partner_phineo" href="https://phineo.co/" target="_blank">
-        <img src="../../public/logos/phineo.webp" />
+        <img src="../../public/logos/phineo.webp" alt="logo_phineo" />
+      </a>
+      <a class="item partner_usinage" href="https://www.usinage-formations.com" target="_blank">
+        <img src="../../public/logos/usinage_formations.webp" alt="logo_usinage_formations"/>
       </a>
       <a class="item partner_dl" href="https://davidlevast.fr" target="_blank">
-        <img src="../../public/logos/logo_davidlevast.webp" />
+        <img src="../../public/logos/logo_davidlevast.webp" alt="logo_david_levast" />
       </a>
     </div>
   </section>
