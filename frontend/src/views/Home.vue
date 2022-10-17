@@ -14,13 +14,13 @@
         </div>
         <div class="container_certification__flex-right">
           <p id="firstParagraph">
-            {{ firstParagraph }}
+            {{ firstParagraph_pt1 }}<span>2019</span>{{ firstParagraph_pt2 }}
           </p>
           <p id="secondParagraph">
-            {{ secondParagraph }}
+            {{ secondParagraph_pt1 }}<span>10</span>{{ secondParagraph_pt2 }}
           </p>
           <p id="thirdParagraph">
-            {{ thirdParagraph }}
+            {{ thirdParagraph_pt1 }}<span>20</span>{{ thirdParagraph_pt2 }}<span>140</span>{{ thirdParagraph_pt3 }}<span>130 K€</span>{{ thirdParagraph_pt4 }}
           </p>
         </div>
       </div>
@@ -198,9 +198,14 @@ export default {
   },
   data() {
     return {
-      firstParagraph: "",
-      secondParagraph: "",
-      thirdParagraph: "",
+      firstParagraph_pt1: "",
+      firstParagraph_pt2: "",
+      secondParagraph_pt1: "",
+      secondParagraph_pt2: "",
+      thirdParagraph_pt1: "",
+      thirdParagraph_pt2: "",
+      thirdParagraph_pt3: "",
+      thirdParagraph_pt4: "",
       window: {
         width: 0,
         height: 0,
@@ -263,21 +268,41 @@ export default {
         document.getElementById("rightArrow").remove("rightArrow");
       }
     },
+    // Gestion de l'affichage différé de la bio entreprise
     typeWriter1: function () {
       const v = this;
-      let creaDate = 2019;
       setTimeout(function () {
-        v.firstParagraph =
-          "ML INDUSTRIE a été créée en " +  creaDate  + " et est implantée actuellement sur les régions rouennaise et lyonnaise.";
-      }, 1000);
+        v.firstParagraph_pt1 =
+          "ML INDUSTRIE a été créée en " ;
+      }, 800);
       setTimeout(function () {
-        v.secondParagraph =
-          "La société collabore avec 10 formateurs dans plusieurs domaines techniques.";
-      }, 2000);
+        v.firstParagraph_pt2 =
+         " et est implantée actuellement sur les régions rouennaise et lyonnaise.";
+      }, 800);
       setTimeout(function () {
-        v.thirdParagraph =
-          "Investie et en plein essor avec 20 formations à son catalogue, elle forme environ 140 stagiaires par an et a vu son chiffre d'affaires s'élever à 130 K€ en deux ans seulement.";
-      }, 3000);
+        v.secondParagraph_pt1 =
+          "La société collabore avec ";
+      }, 1400);
+      setTimeout(function () {
+        v.secondParagraph_pt2 =
+          " formateurs dans plusieurs domaines techniques.";
+      }, 1400);
+      setTimeout(function () {
+        v.thirdParagraph_pt1 =
+          "Investie et en plein essor avec ";
+      }, 2200);
+      setTimeout(function () {
+        v.thirdParagraph_pt2 =
+          " formations à son catalogue, elle forme environ ";
+      }, 2200);
+      setTimeout(function () {
+        v.thirdParagraph_pt3 =
+          " stagiaires par an et a vu son chiffre d'affaires s'élever à ";
+      }, 2200);
+      setTimeout(function () {
+        v.thirdParagraph_pt4 =
+          " en deux ans seulement.";
+      }, 2200);
     },
   },
 };
