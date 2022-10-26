@@ -34,6 +34,8 @@
 
           <a class="navbar-item hoverEffect" href="/maintenance"> Catalogue </a>
 
+          <a class="navbar-item hoverEffect" href="/maintenance"> Calendrier Inter</a>
+
           <div class="navbar-item has-dropdown is-hoverable">
             <a class="navbar-link" href="#navbarHeader"> Plus </a>
 
@@ -71,7 +73,7 @@ export default {
     return {
       isActive: '',
       societe: 'ML INDUSTRIE',
-      titre: 'Un réseau de formations fiable et efficace',
+      titre: 'Des formations fiables et efficaces',
       active: false,
       showNavbar: true,
       window: {

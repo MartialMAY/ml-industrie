@@ -3,7 +3,6 @@
   <header class="prog_header">
     <div class="prog_header__title">
       <h1>Programme de formation</h1>
-      <h2>Mécanique des fluides</h2>
     </div>
     <div class="prog_header__img">
       <img src="../../public/logos/logo_mlindustrie.webp" />
@@ -66,64 +65,8 @@
     <section id="action_formation" class="centre">
       <div class="centre__left">
         <h4><span>II.</span>Action de formation</h4>
-        <h5>Intitulé : Mécanique des fluides</h5>
-        <h6>Description et détail :</h6>
-        <p>Propriétés physiques des fluides</p>
-        <ul>
-          <li>Masse volumique, viscosité ...</li>
-        </ul>
-        <p>
-          Statique des fluides incompressibles, application aux mesures de
-          pression
-        </p>
+        
         <br />
-        <h6>Dynamique des fluides incompressibles</h6>
-        <ul>
-          <li>Notion de charge</li>
-          <li>Equation de Bernoulli</li>
-          <li>Application à la mesure des débits</li>
-        </ul>
-        <br />
-        <h6>Ecoulements en conduite</h6>
-        <ul>
-          <li>Régimes d'écoulement : laminaire, turbulent</li>
-          <li>Pertes de charge linéaires, singulières</li>
-          <li>Calcul des pertes de charge dans un circuit</li>
-        </ul>
-        <br />
-        <h6>Installation de machines sur un circuit</h6>
-        <ul>
-          <li>Principes de fonctionnement, courbes caractéristiques</li>
-          <li>Détermination du point de fonctionnement</li>
-          <li>
-            Problèmes liés au pompage des liquides : amorçage, cavitation
-            Notions de coup de bélier
-          </li>
-          <li>Phénomènes transitoires consécutifs à l'arrêt d'une pompe</li>
-          <li>Problèmes liés au démarrage ou à l'arrêt d'une pompe</li>
-          <li>Etude de quelques dispositifs de protection</li>
-          <li>
-            Mise en situation sur banc d'essai, mesure débit, perte de charge
-          </li>
-        </ul>
-        <br />
-        <h6>
-          Formateurs : <br /><br />
-          &ensp;&ensp;- &ensp;&ensp;Urbain CROMBEZ
-        </h6>
-        <br />
-        <br />
-        <h6>Objectifs de la formation :</h6>
-        <p>
-          Acquérir les connaissances nécessaires pour comprendre les problèmes
-          liés à l’écoulement des fluides
-        </p>
-        <br />
-        <h6>Durée :</h6>
-        <p>Module de 21 heures réparties sur 3 journées.</p>
-        <br />
-        <h6>Délais d'accès :</h6>
-        <p>Formation en intra-entreprise</p>
         <br />
         <h6>Tarif :</h6>
         <ul class="programme_tarifs">
@@ -182,42 +125,6 @@
         <br />
         <h6 class="programme_last-title">PROGRAMME</h6>
         <br />
-        <p>Jour 1</p>
-        <br />
-        <p>Propriétés physiques des fluides</p>
-        <ul>
-          <li>Masse volumique, viscosité...</li>
-        </ul>
-        <p>
-          Statique des fluides incompressibles, application aux mesures de
-          pression
-        </p>
-        <br />
-        <p>Jour 2</p>
-        <br />
-        <p>Cinématique des fluides</p>
-        <br />
-        <p>Jour 3</p>
-        <br />
-        <ul>
-          <li>Dynamique des fluides incompressibles</li>
-          <li>Notion de charge</li>
-          <li>Équation de Bernoulli</li>
-          <li>Application à la mesure des débits</li>
-          <li>Écoulements en conduite</li>
-          <li>Régimes d'écoulement : laminaire, turbulent</li>
-          <li>Pertes de charge linéaires, singulières</li>
-          <li>Calcul des pertes de charge dans un circuit</li>
-          <li>Installation de machines sur un circuit</li>
-          <li>Principes de fonctionnement, courbes caractéristiques</li>
-          <li>Détermination du point de fonctionnement</li>
-          <li>Problèmes liés au pompage des liquides : amorçage, cavitation</li>
-          <li>Notions de coup de bélier</li>
-          <li>Phénomènes transitoires consécutifs à l'arrêt d'une pompe</li>
-          <li>Problèmes liés au démarrage ou à l'arrêt d'une pompe</li>
-          <li>Etude de quelques dispositifs de protection</li>
-          <li>Mise en situation sur banc d'essai, mesure débit, perte de charge</li>
-        </ul>
       </div>
     </section>
     <!-- FIN DE LA SECTION ACTION DE FORMATION -->
@@ -226,8 +133,7 @@
     <section id="calendrier" class="centre">
       <div class="centre__left">
         <h4><span>III.</span>Calendrier Prévisionnel</h4>
-        <p>Date de début : 16 / 03 / 2022</p>
-        <p>Date de fin : 18 / 03 / 2022</p>
+        <p></p>
       </div>
     </section>
     <!-- FIN DE LA SECTION CALENDRIER PREVISIONNEL -->

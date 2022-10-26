@@ -17,10 +17,10 @@
             {{ firstParagraph_pt1 }}<span>2019</span>{{ firstParagraph_pt2 }}
           </p>
           <p id="secondParagraph">
-            {{ secondParagraph_pt1 }}<span>10</span>{{ secondParagraph_pt2 }}
+            {{ secondParagraph_pt1 }}<span>20</span>{{ secondParagraph_pt2 }}
           </p>
           <p id="thirdParagraph">
-            {{ thirdParagraph_pt1 }}<span>20</span>{{ thirdParagraph_pt2 }}<span>140</span>{{ thirdParagraph_pt3 }}<span>130 K€</span>{{ thirdParagraph_pt4 }}
+            {{ thirdParagraph_pt1 }}<span>20</span>{{ thirdParagraph_pt2 }}<span>200</span>{{ thirdParagraph_pt3 }}<span>200 K€</span>{{ thirdParagraph_pt4 }}
           </p>
         </div>
       </div>
@@ -47,6 +47,9 @@
               <li>Mécanique</li>
               <li>Electricité</li>
               <li>Electronique</li>
+              <li>Chaudronnerie</li>
+              <li>Organisation industrielle</li>
+              <li>Robotique</li>
             </ul>
           </div>
         </div>
@@ -108,7 +111,7 @@
               <li>Fiables</li>
               <li>Compétents</li>
               <li>Disponibles</li>
-              <li>A l'écoute de vos</li>
+              <li>A l'écoute de vos besoins</li>
             </ul>
           </div>
         </div>
@@ -304,7 +307,7 @@ export default {
       }, 2200);
       setTimeout(function () {
         v.thirdParagraph_pt4 =
-          " en deux ans seulement.";
+          " en trois ans seulement.";
       }, 2200);
     },
   },
