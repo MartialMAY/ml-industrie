@@ -105,8 +105,8 @@
             <p>Copyright © MLINDUSTRIE {{ date }}</p>
           </div>
           <div class="column has-text-right">
-            <a href="https://www.linkedin.com/company/34702535/" aria-label="Accèder à LinkedIn"><i class="fa fa-linkedin-square" id="linkedin"></i></a>
-            <a href="mailto:mlindustrie76@gmail.com" aria-label="Ecrire un email"><i class="fa-regular fa-envelope-open" id="mail_icon"></i></a>
+            <a href="https://www.linkedin.com/company/34702535/" aria-label="Accèder à LinkedIn" target="_blank"><i class="fa fa-linkedin-square" id="linkedin"></i></a>
+            <a href="mailto:contact@mlindustrie.fr" aria-label="Ecrire un email"><i class="fa-regular fa-envelope-open" id="mail_icon"></i></a>
           </div>
         </div>
       </div>

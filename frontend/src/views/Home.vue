@@ -6,7 +6,7 @@
     ><i id="rightArrow" class="gg-arrow-long-down animateDown"></i>
     <!--Affichage de l'encart de présentation + certification-->
     <div class="hero-body">
-      <h1 class="title" onload="bgHover()">Une entreprise de confiance</h1>
+      <h1 class="title" onload="bgHover()">La formation industrielle de confiance</h1>
       <hr class="accessory" />
       <div class="container container_certification">
         <div class="container_certification__flex-left">
@@ -160,11 +160,16 @@
   <section class="hero is-medium is-bold carousel">
     <input for="position1" type="radio" name="position" id="position1" aria-label="position1"/>
     <input for="position2" type="radio" name="position" id="position2" aria-label="position2"/>
-    <input for="position3" type="radio" name="position" id="position3" aria-label="position3" checked/>
-    <input for="position4" type="radio" name="position" id="position4" aria-label="position4"/>
+    <input for="position3" type="radio" name="position" id="position3" aria-label="position3"/>
+    <input for="position4" type="radio" name="position" id="position4" aria-label="position4" checked/>
     <input for="position5" type="radio" name="position" id="position5" aria-label="position5"/>
+    <input for="position6" type="radio" name="position" id="position6" aria-label="position6"/>
+    <h2 id="partner_lowRes">Nos partenaires</h2>
     <div id="carousel">
-      <h2>Nos partenaires</h2>
+      <h2 id="partner_highRes">Nos partenaires</h2>
+      <a class="item partner_3safe" href="https://3safe.fr/" target="_blank">
+        <img src="../../public/logos/3safe.webp" alt="logo_3safe" />
+      </a>
       <a class="item partner_aexor" href="https://www.aexor.eu/" target="_blank">
         <img src="../../public/logos/aexor.webp" alt="logo_aexor" />
       </a>
@@ -272,6 +277,10 @@ export default {
       if (this.window.width <= 475) {
         document.getElementById("leftArrow").remove("leftArrow");
         document.getElementById("rightArrow").remove("rightArrow");
+      }
+      // Si la résolution est trop faible, on retire le titre des partneraires highRes
+      if (this.window.width < 1201) {
+        document.getElementById("partner_highRes").classList.add("partner_highRes_none");
       }
     },
     // Gestion de l'affichage différé de la bio entreprise

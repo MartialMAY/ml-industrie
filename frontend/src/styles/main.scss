@@ -105,7 +105,11 @@ h3 {
     text-decoration: none;
   }
 }
-
+@media screen and (min-width: 1024px) {
+  .navbar-dropdown a.navbar-item {
+    padding-right: 1.3rem;
+  }
+}
 .navbar-menu {
   align-items: center;
 }
@@ -115,6 +119,11 @@ h3 {
 .displayHr {
   border-top: 2px solid #267a89;
   width: 20%;
+}
+.hoverEffect p {
+  margin-right: 50px;
+  font-family: "Bebas_Neue";
+  font-size: x-large;
 }
 
 //     FOOTER.VUE        //
@@ -267,8 +276,8 @@ footer {
   filter: drop-shadow(-28px -5px 23px #3d3c3c);
 }
 .flex_img {
-  width: 500px;
-  height: auto;
+  width: auto;
+  height: 400px;
   filter: grayscale(100%) drop-shadow(8px 8px 10px #3d3c3c);
   border-radius: 10px;
 }
@@ -468,7 +477,7 @@ th {
     font-size: x-large;
     font-weight: 800;
   }
-  &__title h1 {
+  &__title p {
     text-transform: uppercase;
   }
   &__img {
