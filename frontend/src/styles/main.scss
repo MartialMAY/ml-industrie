@@ -33,6 +33,11 @@ li,
 p {
   font-family: "Montserrat";
 }
+h1 {
+  @media screen and (max-width: 445px) {
+    text-align: center;
+  }
+}
 h3 {
   font-family: "Quicksand";
 }
@@ -47,6 +52,23 @@ h3 {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+//     MAINTENANCE       //
+
+.maintenance_message h2 {
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 30px;
+}
+.maintenance_message p {
+  margin-left: 30px;
+}
+.maintenance_message p:nth-of-type(2) {
+  padding-top: 20px;
+  font-style: italic;
+}
+
 
 //     HEADER.VUE        //
 
@@ -249,13 +271,6 @@ footer {
   height: auto;
   filter: grayscale(100%) drop-shadow(8px 8px 10px #3d3c3c);
   border-radius: 10px;
-  /* @media screen and (max-width: 475px) {
-    height: 12rem;
-  } */
-  /* @media screen and (max-width: 476px) and (max-width: 769px) {
-    width: 250px;
-    height: 150px;
-  } */
 }
 
 #atouts {
