@@ -564,6 +564,7 @@
   }
 }
 #carousel {
+  display: grid;
   margin-top: 50px;
   grid-row: 1 / 2;
   grid-column: 1 / 9;
@@ -585,7 +586,7 @@
     flex-wrap: inherit;
   }
   @media screen and (max-width: 475px) {
-    display: grid;
+    display: flex;
     flex-direction: column;
   }
 }
@@ -731,6 +732,33 @@ input:nth-of-type(6):checked ~ #carousel {
 }
 .partner_dl {
   margin-bottom: 30px;
+}
+//Gestion de la priorité d'affichage des partenaires
+@media screen and (max-width: 1201px) {
+  .partner_3safe {
+    order: 2;
+  } 
+  .partner_aexor{
+    order: 4;
+  } 
+  .partner_asa {
+    order: 1;
+  } 
+  .partner_bart {
+    order: 5;
+  }
+  .partner_dl {
+    order: 8;
+  }
+  .partner_phineo {
+    order: 7;
+  }
+  .partner_sef {
+    order: 3;
+  }
+  .partner_usinage {
+    order: 6;
+  }
 }
 // Gestion de l'animation du carousel basse résolution
 .partner_highRes_none {
