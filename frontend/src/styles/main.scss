@@ -183,9 +183,6 @@ footer {
 .title:not(:last-child) {
   margin-bottom: 7rem;
 }
-/* .column li {
-  list-style-type: "\27A1";
-} */
 .container {
   display: flex;
   justify-content: space-evenly;
@@ -276,12 +273,21 @@ footer {
   filter: drop-shadow(-28px -5px 23px #3d3c3c);
 }
 .flex_img {
-  width: auto;
-  height: 400px;
+  width: 380px;
+  height: 420px;
   filter: grayscale(100%) drop-shadow(8px 8px 10px #3d3c3c);
   border-radius: 10px;
 }
-
+.flex_img_lowRes {
+  width: 250px;
+  height: auto;
+}
+// Ajustement visuel de certaintes images (seo-friendly)
+#wide_img1, #wide_img2 {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  object-fit: cover;
+}
 #atouts {
   @media screen and (min-width: 1024px) {
     margin-left: 80px;

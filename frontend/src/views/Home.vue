@@ -72,7 +72,7 @@
       >
         <div id="img_container">
           
-            <img class="flex_img" src="../../public/img/atouts2.webp" alt="atouts" />
+            <img class="flex_img" id="wide_img1" src="../../public/img/atouts2.webp" alt="atouts" />
           
         </div>
         <div class="flex_txt" id="atouts">
@@ -117,7 +117,7 @@
         </div>
         <div id="img_container">
           
-            <img class="flex_img" src="../../public/img/formateurs2.webp" alt="texte_formateurs"/>
+            <img class="flex_img" id="wide_img2" src="../../public/img/formateurs2.webp" alt="texte_formateurs"/>
           
         </div>
       </div>
@@ -254,16 +254,16 @@ export default {
       this.window.height = window.innerHeight;
     },
     bgHover() {
-      var title_effect = document.querySelector(".title");
+      let title_effect = document.querySelector(".title");
       title_effect.classList.add("bgHover");
     },
     reveal() {
-      var reveals = document.querySelectorAll(".reveal");
+      let reveals = document.querySelectorAll(".reveal");
 
-      for (var i = 0; i < reveals.length; i++) {
-        var windowHeight = window.innerHeight;
-        var elementTop = reveals[i].getBoundingClientRect().top;
-        var elementVisible = 150;
+      for (let i = 0; i < reveals.length; i++) {
+        let windowHeight = window.innerHeight;
+        let elementTop = reveals[i].getBoundingClientRect().top;
+        let elementVisible = 150;
 
         if (elementTop < windowHeight - elementVisible) {
           reveals[i].classList.add("active");
@@ -274,9 +274,21 @@ export default {
     },
     //Si la résolution est trop faible, les flêches seront retirées de l'affichage
     respNav() {
+      let img = document.querySelectorAll(".flex_img");
+
       if (this.window.width <= 475) {
         document.getElementById("leftArrow").remove("leftArrow");
         document.getElementById("rightArrow").remove("rightArrow");
+        // Gestionnaire d'affichage sur les images
+        // En fonction de la résolution d'écran
+        for (let i = 0; i < img.length; i++) {
+          img[i].classList.add("flex_img_lowRes");
+        }
+      } else {
+        
+        for (let i = 0; i < img.length; i++) {
+          img[i].classList.add("flex_img");
+        }
       }
       // Si la résolution est trop faible, on retire le titre des partneraires highRes
       if (this.window.width < 1201) {
