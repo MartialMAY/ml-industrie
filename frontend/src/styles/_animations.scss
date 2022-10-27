@@ -736,10 +736,10 @@ input:nth-of-type(6):checked ~ #carousel {
 //Gestion de la priorité d'affichage des partenaires
 @media screen and (max-width: 1201px) {
   .partner_3safe {
-    order: 2;
+    order: 7;
   } 
   .partner_aexor{
-    order: 4;
+    order: 8;
   } 
   .partner_asa {
     order: 1;
@@ -748,13 +748,13 @@ input:nth-of-type(6):checked ~ #carousel {
     order: 5;
   }
   .partner_dl {
-    order: 8;
+    order: 4;
   }
   .partner_phineo {
-    order: 7;
+    order: 3;
   }
   .partner_sef {
-    order: 3;
+    order: 2;
   }
   .partner_usinage {
     order: 6;
