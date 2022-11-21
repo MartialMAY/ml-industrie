@@ -134,7 +134,7 @@
       >
         <div id="img_container">
           
-            <img class="flex_img" src="../../public/img/certifications2.webp" alt="certifications" />
+            <img class="flex_img" src="../../public/img/diplome.webp" alt="certifications" />
           
         </div>
         <div class="flex_txt" id="certifications">
