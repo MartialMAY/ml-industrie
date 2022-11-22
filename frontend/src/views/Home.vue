@@ -173,14 +173,11 @@
       <a class="item partner_aexor" href="https://www.aexor.eu/" target="_blank">
         <img src="../../public/logos/aexor.webp" alt="logo_aexor" />
       </a>
-      <a class="item partner_sef" href="https://www.sef-formation.info" target="_blank">
-        <img src="../../public/logos/sef.webp" alt="logo_societe_europeenne_formation" />
+      <a class="item partner_bart" href="#carousel">
+        <img src="../../public/logos/bart.webp" alt="logo_bart_metallerie"/>
       </a>
       <a class="item partner_asa" href="https://www.asa-conception.fr/" target="_blank">
         <img src="../../public/logos/asa.webp" alt="logo_asa_conception"/>
-      </a>
-      <a class="item partner_bart" href="#carousel">
-        <img src="../../public/logos/bart.webp" alt="logo_bart_metallerie"/>
       </a>
       <a class="item partner_phineo" href="https://phineo.co/" target="_blank">
         <img src="../../public/logos/phineo.webp" alt="logo_phineo" />
