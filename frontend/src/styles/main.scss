@@ -41,6 +41,9 @@ h1 {
 h3 {
   font-family: "Quicksand";
 }
+#lowResH1 {
+  text-align: center;
+}
 
 //      APP.VUE           //
 
@@ -128,12 +131,21 @@ h3 {
 
 //     FOOTER.VUE        //
 
-footer {
-  margin-top: auto;
+.footer {
   background-color: #c0c4c2 !important;
+}
+@media screen and (max-width: 799px) {
+  .footer {
+    margin-bottom: 50px;
+  }
 }
 .column {
   padding: 1.2rem;
+  @media screen and (min-width: 1024px) {
+    .column {
+      margin-top: 50px;
+    }
+  }
 }
 .content h3 {
   margin-left: 25px;

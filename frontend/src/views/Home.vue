@@ -2,8 +2,6 @@
   <Header />
   <!-- Début de la section formations-->
   <section class="hero is-medium is-bold" id="section_historique">
-    <i id="leftArrow" class="gg-arrow-long-down animateDown"></i
-    ><i id="rightArrow" class="gg-arrow-long-down animateDown"></i>
     <!--Affichage de l'encart de présentation + certification-->
     <div class="hero-body">
       <h1 class="title" onload="bgHover()">La formation industrielle de confiance</h1>
@@ -25,7 +23,7 @@
         </div>
       </div>
     </div>
-    <i class="gg-arrow-long-right animate"></i>
+    <i class="gg-arrow-long-right animate animateArrow"></i>
   </section>
   <!--Fin de l'affichage de l'encart de présentation + certification-->
   <section class="hero is-medium is-bold" id="section_formations">
@@ -60,7 +58,7 @@
         </div>
       </div>
     </div>
-    <i class="gg-arrow-long-right animate"></i>
+    <i class="gg-arrow-long-right animate animateArrow"></i>
   </section>
   <!-- Fin de la section formations-->
   <!-- Début de la section atouts-->
@@ -91,7 +89,7 @@
         </div>
       </div>
     </div>
-    <i class="gg-arrow-long-left animate"></i>
+    <i class="gg-arrow-long-left animate animateArrow"></i>
   </section>
   <!-- Fin de la section atouts-->
   <!-- Début de la section formateurs-->

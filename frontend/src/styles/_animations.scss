@@ -248,10 +248,32 @@
     100% {
       width: 90%;
       transform: scale(var(--ggs, 8));
+      box-sizing: border-box;
+      overflow: hidden;
     }
   }
 }
 // Gestion de l'animation du séparateur fléché vertical
+@media screen and (max-width: 699px) {
+  .animateArrow {
+    animation: animateArrow 3s linear forwards;
+
+    @keyframes animateArrow {
+      0% {
+        height: 0%;
+        transform: scale(var(--ggs, 5));
+      }
+      50% {
+        width: 10%;
+        transform: scale(var(--ggs, 7));
+      }
+      100% {
+        width: 0%;
+      }
+    }
+  }
+}
+
 @media screen and (min-width: 700px) and (max-width: 900px) {
   .animateArrowDown {
     animation: animateArrowDown 3s linear forwards;
@@ -262,14 +284,14 @@
         transform: scale(var(--ggs, 5));
       }
       50% {
-        height: 25%;
         width: 10%;
         transform: scale(var(--ggs, 7));
       }
       100% {
-        height: 46.7%;
         width: 21.5%;
         transform: scale(var(--ggs, 8));
+        box-sizing: border-box;
+        overflow: hidden;
       }
     }
   }
@@ -292,11 +314,13 @@
         height: 52%;
         width: 21.5%;
         transform: scale(var(--ggs, 8));
+        box-sizing: border-box;
+        overflow: hidden;
       }
     }
   }
 }
-@media screen and (min-width: 1441px) and (max-width: 1919px) {
+/* @media screen and (min-width: 1441px) and (max-width: 1919px) {
   .animateArrowDown {
     animation: animateArrowDown 3s linear forwards;
 
@@ -339,7 +363,7 @@
       }
     }
   }
-}
+} */
 // Gestion de l'animation de l'affichage du texte
 #firstParagraph {
   animation: paragraph 3s;
