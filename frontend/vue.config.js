@@ -9,5 +9,4 @@ module.exports = defineConfig({
       .use("file-loader")
       .loader("file-loader");
   },
-  publicPath: ''
 });

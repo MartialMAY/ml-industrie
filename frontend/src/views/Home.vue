@@ -8,17 +8,17 @@
       <hr class="accessory" />
       <div class="container container_certification">
         <div class="container_certification__flex-left">
-          <img src="../../public/img/certification_qualiopi.webp" alt="certification_qualiopi" />
+          <img src="../../public/img/certification_qualiopi.webp" width="600" alt="certification_qualiopi" />
         </div>
         <div class="container_certification__flex-right">
           <p id="firstParagraph">
             {{ firstParagraph_pt1 }}<span>2019</span>{{ firstParagraph_pt2 }}
           </p>
           <p id="secondParagraph">
-            {{ secondParagraph_pt1 }}<span>20</span>{{ secondParagraph_pt2 }}
+            {{ secondParagraph_pt1 }}<span>30</span>{{ secondParagraph_pt2 }}
           </p>
           <p id="thirdParagraph">
-            {{ thirdParagraph_pt1 }}<span>20</span>{{ thirdParagraph_pt2 }}<span>200</span>{{ thirdParagraph_pt3 }}<span>200 K€</span>{{ thirdParagraph_pt4 }}
+            {{ thirdParagraph_pt1 }}<span>20</span>{{ thirdParagraph_pt2 }}<span>300</span>{{ thirdParagraph_pt3 }}<span>1400 K€</span>{{ thirdParagraph_pt4 }}
           </p>
         </div>
       </div>
@@ -35,25 +35,30 @@
             <img src="../../public/img/formations.webp" alt="formations" />
           
           <div class="column">
-            <ul>
-              <li>Usinage conventionnel</li>
-              <li>Usinage commande numérique</li>
-              <li>Pneumatique</li>
-              <li>Hydraulique</li>
-              <li>Automatisme</li>
-              <li>Soudure</li>
-              <li>Mécanique</li>
-              <li>Electricité</li>
-              <li>Electronique</li>
-              <li>Chaudronnerie</li>
-              <li>Organisation industrielle</li>
-              <li>Robotique</li>
-            </ul>
+            <div>
+              <h3>Usinage conventionnel</h3>
+              <h3>Usinage commande numérique</h3>
+              <h3>Pneumatique</h3>
+              <h3>Hydraulique</h3>
+              <h3>Automatisme</h3>
+              <h3>Soudure</h3>
+              <h3>Mécanique</h3>
+              <h3>Electricité</h3>
+              <h3>Electronique</h3>
+              <h3>Chaudronnerie</h3>
+              <h3>Organisation industrielle</h3>
+              <h3>Robotique</h3>
+              <h3>SST</h3>
+              <h3>AIPR</h3>
+              <h3>Habilitation électrique</h3>
+              <h3>Incendie</h3>
+              <h3>ATEX</h3>
+            </div>
           </div>
         </div>
         <div>
           
-            <img class="flex_img" src="../../public/img/formations3.webp" alt="texte_formations"/>
+            <img class="flex_img-formations" src="../../public/img/airp-image.webp" width="600" height="500" alt="texte_formations"/>
           
         </div>
       </div>

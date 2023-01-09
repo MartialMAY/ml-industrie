@@ -237,8 +237,19 @@ h3 {
     font-size: larger;
   }
 }
+.container_certification__flex-left {
+  background: url('../../public/img/formations3.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  margin: 0 140px;
+  height: 400px;
+}
 .container_certification__flex-left img {
-  width: 50%;
+  position: absolute;
+  z-index: 1;
+  top: 70px;
   margin-bottom: 30px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
@@ -276,7 +287,8 @@ h3 {
 .flex_txt {
   @include displayMenus;
 }
-.flex_txt li {
+.flex_txt h3, .flex_txt li {
+  font-family: 'Montserrat', sans-serif;
   font-size: 20px;
   font-weight: 600;
 }
@@ -285,8 +297,8 @@ h3 {
   filter: drop-shadow(-28px -5px 23px #3d3c3c);
 }
 .flex_img {
-  width: 380px;
-  height: 420px;
+  //width: 380px;
+  //height: 420px;
   filter: grayscale(100%) drop-shadow(8px 8px 10px #3d3c3c);
   border-radius: 10px;
 }
