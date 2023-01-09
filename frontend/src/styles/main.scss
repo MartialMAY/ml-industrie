@@ -243,8 +243,10 @@ h3 {
   background-size: cover;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
-  margin: 0 140px;
   height: 400px;
+  @media screen and (min-width: 1408px) {
+    margin: 0 140px;
+  }
 }
 .container_certification__flex-left img {
   position: absolute;
@@ -254,7 +256,7 @@ h3 {
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
   @media screen and (max-width: 769px) {
-    width: 100%;
+   display: flex;
   }
 }
 .container_certification__flex-right p {

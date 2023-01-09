@@ -4,11 +4,17 @@
   <section class="hero is-medium is-bold" id="section_historique">
     <!--Affichage de l'encart de présentation + certification-->
     <div class="hero-body">
-      <h1 class="title" onload="bgHover()">La formation industrielle de confiance</h1>
+      <h1 class="title" onload="bgHover()">
+        La formation industrielle de confiance
+      </h1>
       <hr class="accessory" />
       <div class="container container_certification">
         <div class="container_certification__flex-left">
-          <img src="../../public/img/certification_qualiopi.webp" width="600" alt="certification_qualiopi" />
+          <img
+            src="../../public/img/certification_qualiopi.webp"
+            width="600"
+            alt="certification_qualiopi"
+          />
         </div>
         <div class="container_certification__flex-right">
           <p id="firstParagraph">
@@ -18,7 +24,9 @@
             {{ secondParagraph_pt1 }}<span>30</span>{{ secondParagraph_pt2 }}
           </p>
           <p id="thirdParagraph">
-            {{ thirdParagraph_pt1 }}<span>20</span>{{ thirdParagraph_pt2 }}<span>300</span>{{ thirdParagraph_pt3 }}<span>1400 K€</span>{{ thirdParagraph_pt4 }}
+            {{ thirdParagraph_pt1 }}<span>20</span>{{ thirdParagraph_pt2
+            }}<span>1400</span>{{ thirdParagraph_pt3 }}<span>300 K€</span
+            >{{ thirdParagraph_pt4 }}
           </p>
         </div>
       </div>
@@ -31,9 +39,9 @@
       <div class="container cont_formations reveal fade-bottom">
         <div class="flex_txt">
           <h2 class="title">Nos formations techniques</h2>
-          
-            <img src="../../public/img/formations.webp" alt="formations" />
-          
+
+          <img src="../../public/img/formations.webp" alt="formations" />
+
           <div class="column">
             <div>
               <h3>Usinage conventionnel</h3>
@@ -57,9 +65,13 @@
           </div>
         </div>
         <div>
-          
-            <img class="flex_img-formations" src="../../public/img/airp-image.webp" width="600" height="500" alt="texte_formations"/>
-          
+          <img
+            class="flex_img-formations"
+            src="../../public/img/airp-image.webp"
+            width="600"
+            height="500"
+            alt="texte_formations"
+          />
         </div>
       </div>
     </div>
@@ -74,15 +86,18 @@
         id="container_formations"
       >
         <div id="img_container">
-          
-            <img class="flex_img" id="wide_img1" src="../../public/img/atouts2.webp" alt="atouts" />
-          
+          <img
+            class="flex_img"
+            id="wide_img1"
+            src="../../public/img/atouts2.webp"
+            alt="atouts"
+          />
         </div>
         <div class="flex_txt" id="atouts">
           <h2 class="title">Nos atouts</h2>
-          
-            <img src="../../public/img/atouts.webp" alt="texte_atouts"/>
-          
+
+          <img src="../../public/img/atouts.webp" alt="texte_atouts" />
+
           <div class="column">
             <ul>
               <li>Réactif</li>
@@ -106,9 +121,9 @@
       >
         <div class="flex_txt" id="formateurs">
           <h2 class="title">Nos formateurs</h2>
-          
-            <img src="../../public/img/formateurs.webp" alt="formateurs" />
-          
+
+          <img src="../../public/img/formateurs.webp" alt="formateurs" />
+
           <div class="column">
             <ul>
               <li>Fiables</li>
@@ -119,9 +134,12 @@
           </div>
         </div>
         <div id="img_container">
-          
-            <img class="flex_img" id="wide_img2" src="../../public/img/formateurs2.webp" alt="texte_formateurs"/>
-          
+          <img
+            class="flex_img"
+            id="wide_img2"
+            src="../../public/img/formateurs2.webp"
+            alt="texte_formateurs"
+          />
         </div>
       </div>
     </div>
@@ -136,15 +154,20 @@
         id="container_formations"
       >
         <div id="img_container">
-          
-            <img class="flex_img" src="../../public/img/diplome.webp" alt="certifications" />
-          
+          <img
+            class="flex_img"
+            src="../../public/img/diplome.webp"
+            alt="certifications"
+          />
         </div>
         <div class="flex_txt" id="certifications">
           <h2 class="title">Nos certifications</h2>
-          
-            <img src="../../public/img/certifications.webp" alt="texte_certifications" />
-          
+
+          <img
+            src="../../public/img/certifications.webp"
+            alt="texte_certifications"
+          />
+
           <div class="column">
             <ul>
               <li>Tests</li>
@@ -161,35 +184,90 @@
   <!-- Fin de la section certifications-->
   <!-- Début de la section partenaires-->
   <section class="hero is-medium is-bold carousel">
-    <input for="position1" type="radio" name="position" id="position1" aria-label="position1"/>
-    <input for="position2" type="radio" name="position" id="position2" aria-label="position2"/>
-    <input for="position3" type="radio" name="position" id="position3" aria-label="position3"/>
-    <input for="position4" type="radio" name="position" id="position4" aria-label="position4" checked/>
-    <input for="position5" type="radio" name="position" id="position5" aria-label="position5"/>
-    <input for="position6" type="radio" name="position" id="position6" aria-label="position6"/>
+    <input
+      for="position1"
+      type="radio"
+      name="position"
+      id="position1"
+      aria-label="position1"
+    />
+    <input
+      for="position2"
+      type="radio"
+      name="position"
+      id="position2"
+      aria-label="position2"
+    />
+    <input
+      for="position3"
+      type="radio"
+      name="position"
+      id="position3"
+      aria-label="position3"
+    />
+    <input
+      for="position4"
+      type="radio"
+      name="position"
+      id="position4"
+      aria-label="position4"
+      checked
+    />
+    <input
+      for="position5"
+      type="radio"
+      name="position"
+      id="position5"
+      aria-label="position5"
+    />
+    <input
+      for="position6"
+      type="radio"
+      name="position"
+      id="position6"
+      aria-label="position6"
+    />
     <h2 id="partner_lowRes">Nos partenaires</h2>
     <div id="carousel">
       <h2 id="partner_highRes">Nos partenaires</h2>
       <a class="item partner_3safe" href="https://3safe.fr/" target="_blank">
         <img src="../../public/logos/3safe.webp" alt="logo_3safe" />
       </a>
-      <a class="item partner_aexor" href="https://www.aexor.eu/" target="_blank">
+      <a
+        class="item partner_aexor"
+        href="https://www.aexor.eu/"
+        target="_blank"
+      >
         <img src="../../public/logos/aexor.webp" alt="logo_aexor" />
       </a>
       <a class="item partner_bart" href="#carousel">
-        <img src="../../public/logos/bart.webp" alt="logo_bart_metallerie"/>
+        <img src="../../public/logos/bart.webp" alt="logo_bart_metallerie" />
       </a>
-      <a class="item partner_asa" href="https://www.asa-conception.fr/" target="_blank">
-        <img src="../../public/logos/asa.webp" alt="logo_asa_conception"/>
+      <a
+        class="item partner_asa"
+        href="https://www.asa-conception.fr/"
+        target="_blank"
+      >
+        <img src="../../public/logos/asa.webp" alt="logo_asa_conception" />
       </a>
       <a class="item partner_phineo" href="https://phineo.co/" target="_blank">
         <img src="../../public/logos/phineo.webp" alt="logo_phineo" />
       </a>
-      <a class="item partner_usinage" href="https://www.usinage-formations.com" target="_blank">
-        <img src="../../public/logos/usinage_formations.webp" alt="logo_usinage_formations"/>
+      <a
+        class="item partner_usinage"
+        href="https://www.usinage-formations.com"
+        target="_blank"
+      >
+        <img
+          src="../../public/logos/usinage_formations.webp"
+          alt="logo_usinage_formations"
+        />
       </a>
       <a class="item partner_dl" href="https://davidlevast.fr" target="_blank">
-        <img src="../../public/logos/logo_davidlevast.webp" alt="logo_david_levast" />
+        <img
+          src="../../public/logos/logo_davidlevast.webp"
+          alt="logo_david_levast"
+        />
       </a>
     </div>
   </section>
@@ -233,7 +311,7 @@ export default {
   },
   mounted() {
     this.typeWriter1(), //window.addEventListener("resize", this.handleResize);
-    this.handleResize();
+      this.handleResize();
     this.respNav();
     this.reveal();
     this.bgHover();
@@ -285,38 +363,36 @@ export default {
           img[i].classList.add("flex_img_lowRes");
         }
       } else {
-        
         for (let i = 0; i < img.length; i++) {
           img[i].classList.add("flex_img");
         }
       }
       // Si la résolution est trop faible, on retire le titre des partneraires highRes
       if (this.window.width < 1201) {
-        document.getElementById("partner_highRes").classList.add("partner_highRes_none");
+        document
+          .getElementById("partner_highRes")
+          .classList.add("partner_highRes_none");
       }
     },
     // Gestion de l'affichage différé de la bio entreprise
     typeWriter1: function () {
       const v = this;
       setTimeout(function () {
-        v.firstParagraph_pt1 =
-          "ML INDUSTRIE a été créée en " ;
+        v.firstParagraph_pt1 = "ML INDUSTRIE a été créée en ";
       }, 800);
       setTimeout(function () {
         v.firstParagraph_pt2 =
-         " et est implantée actuellement sur les régions rouennaise et lyonnaise.";
+          " et est implantée actuellement sur les régions rouennaise et lyonnaise.";
       }, 800);
       setTimeout(function () {
-        v.secondParagraph_pt1 =
-          "La société collabore avec ";
+        v.secondParagraph_pt1 = "La société collabore avec ";
       }, 1400);
       setTimeout(function () {
         v.secondParagraph_pt2 =
           " formateurs dans plusieurs domaines techniques.";
       }, 1400);
       setTimeout(function () {
-        v.thirdParagraph_pt1 =
-          "Investie et en plein essor avec ";
+        v.thirdParagraph_pt1 = "Investie et en plein essor avec ";
       }, 2200);
       setTimeout(function () {
         v.thirdParagraph_pt2 =
@@ -327,8 +403,7 @@ export default {
           " stagiaires par an et a vu son chiffre d'affaires s'élever à ";
       }, 2200);
       setTimeout(function () {
-        v.thirdParagraph_pt4 =
-          " en trois ans seulement.";
+        v.thirdParagraph_pt4 = " en trois ans seulement.";
       }, 2200);
     },
   },
