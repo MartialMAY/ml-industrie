@@ -17,17 +17,17 @@
           />
         </div>
         <div class='container_certification__flex-right'>
-          <p id='firstParagraph'>
+          <h2 id='firstParagraph'>
             {{ firstParagraph_pt1 }}<span>2019</span>{{ firstParagraph_pt2 }}
-          </p>
-          <p id='secondParagraph'>
+          </h2>
+          <h2 id='secondParagraph'>
             {{ secondParagraph_pt1 }}<span>30</span>{{ secondParagraph_pt2 }}
-          </p>
-          <p id='thirdParagraph'>
+          </h2>
+          <h2 id='thirdParagraph'>
             {{ thirdParagraph_pt1 }}<span>20</span>{{ thirdParagraph_pt2
             }}<span>1400</span>{{ thirdParagraph_pt3 }}<span>300 K€</span
             >{{ thirdParagraph_pt4 }}
-          </p>
+            </h2>
         </div>
       </div>
     </div>
@@ -378,7 +378,7 @@ export default {
     typeWriter1: function () {
       const v = this;
       setTimeout(function () {
-        v.firstParagraph_pt1 = 'ML INDUSTRIE a été créée en ';
+        v.firstParagraph_pt1 = 'ML INDUSTRIE, spécialiste de la formation industrielle, a été créée en ';
       }, 800);
       setTimeout(function () {
         v.firstParagraph_pt2 =

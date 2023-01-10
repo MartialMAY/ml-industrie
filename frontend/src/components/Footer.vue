@@ -3,7 +3,7 @@
     <div class='content has-text-centered'>
       <div class='columns'>
         <div class='column'>
-          <h3>Qui sommes-nous ?</h3>
+          <h4>Qui sommes-nous ?</h4>
           <p class='has-text-center'>SAS ML INDUSTRIE au capital de 5 000€</p>
           <p class='has-text-center'>
             23 impasse du Petit Pont 76230 ISNEAUVILLE
@@ -15,7 +15,7 @@
           <p class='has-text-center'></p>
         </div>
         <div class='column'>
-          <h3>Documents</h3>
+          <h4>Documents</h4>
           <ul class='linkList'>
             <li>
               <a
@@ -65,7 +65,7 @@
           </ul>
         </div>
         <div class='column'>
-          <h3>Mentions Légales</h3>
+          <h4>Mentions Légales</h4>
           <ul>
             <li>
               <a
@@ -132,7 +132,7 @@ export default {
       regLink: 'regLink',
       reggLink: 'reggLink',
       livret: 'livret',
-      // cata: 'cata',
+      cata: 'cata',
       annuaire: 'annuaire',
       candidature: 'candidature',
       // programme: 'programme',

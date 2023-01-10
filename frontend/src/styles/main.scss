@@ -148,7 +148,7 @@ h3 {
     }
   }
 }
-.content h3 {
+.content h4 {
   margin-left: 25px;
 }
 .copyright {
@@ -168,7 +168,12 @@ h3 {
 .columns .has-text-right {
   margin-right: 50px;
 }
+
+
+
 //     HOME.VUE        //
+
+
 
 .hero {
   color: #fff;
@@ -233,9 +238,11 @@ h3 {
       margin: 3rem 9rem;
     }
   }
-  &__flex-right p {
+  &__flex-right h2 {
     padding: 1.1rem;
     font-size: larger;
+    font-family: "Montserrat";
+    font-weight: 600;
   }
 }
 .container_certification__flex-left {
@@ -260,7 +267,7 @@ h3 {
    display: flex;
   }
 }
-.container_certification__flex-right p {
+.container_certification__flex-right h2 {
   margin: 8px;
   color: #3d3c3c;
   width: auto;
@@ -291,11 +298,13 @@ h3 {
   @include displayMenus;
 }
 .flex_txt h3, .flex_txt li {
+  padding: 5px;
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
   font-weight: 600;
 }
 .flex_txt img {
+  margin-bottom: 50px;
   border-radius: 10px;
   filter: drop-shadow(-28px -5px 23px #3d3c3c);
 }
@@ -314,6 +323,18 @@ h3 {
   aspect-ratio: 16 / 9;
   width: 100%;
   object-fit: cover;
+}
+#section_formations .column, #section_formateurs .column {
+  text-align: left;
+  @media screen and (max-width: 768px) {
+    text-align: center;
+  }
+}
+#section_atouts .column, #section_certifications .column {
+  text-align: right;
+  @media screen and (max-width: 768px) {
+    text-align: center;
+  }
 }
 #atouts {
   @media screen and (min-width: 1024px) {

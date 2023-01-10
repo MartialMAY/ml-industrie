@@ -36,8 +36,11 @@
             <a class="navbar-link" href="#navbarHeader"> Plus </a>
 
             <div class="navbar-dropdown">
-              <a class="navbar-item hoverEffect" href="/maintenance"> Catalogue </a>
-              <a class="navbar-item hoverEffect" href="/maintenance"> Calendrier Inter</a>
+              <a class="navbar-item hoverEffect" :href='cataLink'
+                aria-label='Télécharger catalogue'
+                download='fichier'
+                >{{ cata }} Catalogue </a>
+              <a class="navbar-item hoverEffect" href="https://www.ouformer.com/organisme-de-formation/ML-Industrie"> Calendrier Inter</a>
               <a class="navbar-item hoverEffect" href="/programme"> Programme de formation </a>
               <hr class="navbar-divider" />
               <a class="navbar-item" href="#footer"> En savoir plus</a>
@@ -66,6 +69,8 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
+
 export default {
   data () {
     return {
@@ -80,7 +85,11 @@ export default {
       }
     }
   },
-
+  computed: {
+    ...mapState({
+      cataLink: 'cataLink'
+    })
+  },
   mounted () {
     window.addEventListener('resize', this.handleResize)
     this.handleResize()

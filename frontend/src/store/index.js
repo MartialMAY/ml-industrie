@@ -12,7 +12,7 @@ export default createStore({
     reglement: "Réglement Intérieur",
     reglement_g: "Réglement Général",
     progLink: require("../../src/assets/programme_formation.pdf").default,
-    cataLink: require("../../src/assets/catalogue.pdf").default,
+    cataLink: require("../../src/assets/tarifs.pdf").default,
     livretLink: require("../../src/assets/livret_accueil.pdf").default,
     contactLink: require("../../src/assets/annuaire_contacts.pdf").default,
     candidatLink: require("../../src/assets/dossier_candidature.pdf").default,
