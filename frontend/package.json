@@ -17,6 +17,7 @@
     "bulma": "^0.9.4",
     "bulma-carousel": "^4.0.24",
     "core-js": "^3.27.1",
+    "express": "^4.18.2",
     "request": "^2.79.0",
     "vue": "^3.2.45",
     "vue-axios": "^3.5.2",
@@ -24,6 +25,7 @@
     "vue-lighthouse-viewer": "^0.1.182",
     "vue-meta": "^2.4.0",
     "vue-router": "^4.1.6",
+    "vue-server-renderer": "^2.7.14",
     "vue-slick-carousel": "^1.0.6",
     "vuex": "^4.1.0",
     "yocto-queue": "^1.0.0"

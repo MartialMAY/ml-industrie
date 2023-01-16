@@ -12,9 +12,5 @@ const app = createApp(App)
 app
     .use(router)
     .use(store)
-    /* .use(VueMeta, {
-        refreshOnceOnNavigation: true,
-        keyName: 'metaInfo'
-    }) */
 app
     .mount('#app')
