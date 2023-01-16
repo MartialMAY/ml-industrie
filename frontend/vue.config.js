@@ -45,10 +45,21 @@ module.exports = defineConfig({
       ],
     },
   },
+  configureWebpack: {
+    target: 'node',
+    output: {
+      libraryTarget: 'commonjs2'
+    },
+    entry: './src/main.js',
+    plugins: [
+        new VueSSRServerPlugin(),
+        new VueSSRClientPlugin()
+    ]
+  },
   chainWebpack: (config) => {
     config.optimization.delete("splitChunks");
     config.entryPoints.delete("app");
-    config.entry("entry-server").add("./src/main.js").end();
+    config.entry("entry-server").add("./src/server.js").end();
     config.entry("entry-client").add("./src/main.js").end();
     config.module
       .rule("pdf")
