@@ -1,6 +1,4 @@
 const { defineConfig } = require("@vue/cli-service");
-const VueSSRServerPlugin = require("vue-server-renderer/server-plugin");
-const VueSSRClientPlugin = require("vue-server-renderer/client-plugin");
 
 module.exports = defineConfig({
   pluginOptions: {
@@ -45,33 +43,11 @@ module.exports = defineConfig({
       ],
     },
   },
-  configureWebpack: {
-    target: 'node',
-    output: {
-      libraryTarget: 'commonjs2'
-    },
-    entry: './src/main.js',
-    plugins: [
-        new VueSSRServerPlugin(),
-        new VueSSRClientPlugin()
-    ]
-  },
   chainWebpack: (config) => {
-    config.optimization.delete("splitChunks");
-    config.entryPoints.delete("app");
-    config.entry("entry-server").add("./src/server.js").end();
-    config.entry("entry-client").add("./src/main.js").end();
     config.module
       .rule("pdf")
       .test(/\.(pdf)(\?.*)?$/)
       .use("file-loader")
       .loader("file-loader");
-    config.plugins.delete("pwa");
-    config.plugins.delete("workbox");
-    config.plugins.delete("html");
-    config.plugins.delete("preload");
-    config.plugins.delete("prefetch");
-    config.plugin("server-plugin").use(VueSSRServerPlugin);
-    config.plugin("client-plugin").use(VueSSRClientPlugin);
   },
 });
