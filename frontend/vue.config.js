@@ -1,22 +1,47 @@
 const { defineConfig } = require('@vue/cli-service')
-const SitemapPlugin = require('sitemap-webpack-plugin').default
 
-const paths = [
-  {
-    path: '/',
-    lastmod: new Date().toISOString().slice(0, 10),
-    priority: 0.8,
-    changefreq: 'hourly'
-  }
-]
 module.exports = defineConfig({
-  transpileDependencies: true,
-  // Utilisation de configureWepack pour ajouter un plugin
-  configureWebpack: {
-    plugins: [new SitemapPlugin({
-      base: 'https://mlindustrie.netlify.app',
-      paths
-    })]
+  pluginOptions: {
+    sitemap: {
+      baseURL: 'https://mlindustrie.netlify.app',
+      routes: [
+        {
+          path: '/',
+          changefreq: 'daily',
+          priority: 1
+        },
+        {
+          path: '/programme',
+          changefreq: 'daily',
+          priority: 0.9
+        },
+        {
+          path: '/header',
+          changefreq: 'daily',
+          priority: 0.9
+        },
+        {
+          path: '/footer',
+          changefreq: 'daily',
+          priority: 0.9
+        },
+        {
+          path: '/signup',
+          changefreq: 'daily',
+          priority: 0.9
+        },
+        {
+          path: '/pdf',
+          changefreq: 'daily',
+          priority: 0.9
+        },
+        {
+          path: '/maintenance',
+          changefreq: 'daily',
+          priority: 0.9
+        },
+      ]
+    }
   },
   chainWebpack: (config) => {
     config.module

@@ -1,5 +1,6 @@
 import { createWebHistory, createRouter } from 'vue-router'
-import Home from '../views/Home.vue'
+import Home from '../App.vue'
+//import App from '../App.vue'
 //import Catalogue from '../views/Catalogue.vue'
 import Programme from '../views/Programme.vue'
 import Header from '../components/Header.vue'
