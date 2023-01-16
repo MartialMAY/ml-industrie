@@ -5,7 +5,7 @@
     <!--Affichage de l'encart de présentation + certification-->
     <div class='hero-body'>
       <h1 class='title' onload='bgHover()'>
-        La formation industrielle de confiance
+        La formation industrielle et technique
       </h1>
       <hr class='accessory' />
       <div class='container container_certification'>
