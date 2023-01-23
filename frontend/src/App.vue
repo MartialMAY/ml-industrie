@@ -1,5 +1,5 @@
 <template>
-<Header />
+  <Header />
   <!-- Début de la section formations-->
   <section class='hero is-medium is-bold' id='section_historique'>
     <!--Affichage de l'encart de présentation + certification-->
@@ -10,11 +10,7 @@
       <hr class='accessory' />
       <div class='container container_certification'>
         <div class='container_certification__flex-left'>
-          <img
-            src='../public/img/certification_qualiopi.webp'
-            width='600'
-            alt='certification_qualiopi'
-          />
+          <img src='../public/img/certification_qualiopi.webp' width='600' alt='certification_qualiopi' />
         </div>
         <div class='container_certification__flex-right'>
           <h2 id='firstParagraph'>
@@ -24,10 +20,10 @@
             {{ secondParagraph_pt1 }}<span>30</span>{{ secondParagraph_pt2 }}
           </h2>
           <h2 id='thirdParagraph'>
-            {{ thirdParagraph_pt1 }}<span>20</span>{{ thirdParagraph_pt2
-            }}<span>1400</span>{{ thirdParagraph_pt3 }}<span>300 K€</span
-            >{{ thirdParagraph_pt4 }}
-            </h2>
+            {{ thirdParagraph_pt1 }}<span>20</span>{{
+              thirdParagraph_pt2
+            }}<span>1400</span>{{ thirdParagraph_pt3 }}<span>300 K€</span>{{ thirdParagraph_pt4 }}
+          </h2>
         </div>
       </div>
     </div>
@@ -65,13 +61,8 @@
           </div>
         </div>
         <div>
-          <img
-            class='flex_img-formations'
-            src='../public/img/airp-image.webp'
-            width='600'
-            height='500'
-            alt='texte_formations'
-          />
+          <img class='flex_img-formations' src='../public/img/airp-image.webp' width='600' height='500'
+            alt='texte_formations' />
         </div>
       </div>
     </div>
@@ -81,17 +72,9 @@
   <!-- Début de la section atouts-->
   <section class='hero is-medium is-bold' id='section_atouts'>
     <div class='hero-body'>
-      <div
-        class='container cont_formations reveal fade-bottom'
-        id='container_formations'
-      >
+      <div class='container cont_formations reveal fade-bottom' id='container_formations'>
         <div id='img_container'>
-          <img
-            class='flex_img'
-            id='wide_img1'
-            src='../public/img/atouts2.webp'
-            alt='atouts'
-          />
+          <img class='flex_img' id='wide_img1' src='../public/img/atouts2.webp' alt='atouts' />
         </div>
         <div class='flex_txt' id='atouts'>
           <h2 class='title'>Nos atouts</h2>
@@ -115,10 +98,7 @@
   <!-- Début de la section formateurs-->
   <section class='hero is-medium is-bold' id='section_formateurs'>
     <div class='hero-body'>
-      <div
-        class='container cont_formations reveal fade-bottom'
-        id='container_formations'
-      >
+      <div class='container cont_formations reveal fade-bottom' id='container_formations'>
         <div class='flex_txt' id='formateurs'>
           <h2 class='title'>Nos formateurs</h2>
 
@@ -134,12 +114,7 @@
           </div>
         </div>
         <div id='img_container'>
-          <img
-            class='flex_img'
-            id='wide_img2'
-            src='../public/img/formateurs2.webp'
-            alt='texte_formateurs'
-          />
+          <img class='flex_img' id='wide_img2' src='../public/img/formateurs2.webp' alt='texte_formateurs' />
         </div>
       </div>
     </div>
@@ -149,24 +124,14 @@
   <!-- Début de la section certifications-->
   <section class='hero is-medium is-bold' id='section_certifications'>
     <div class='hero-body'>
-      <div
-        class='container cont_formations reveal fade-bottom'
-        id='container_formations'
-      >
+      <div class='container cont_formations reveal fade-bottom' id='container_formations'>
         <div id='img_container'>
-          <img
-            class='flex_img'
-            src='../public/img/diplome.webp'
-            alt='certifications'
-          />
+          <img class='flex_img' src='../public/img/diplome.webp' alt='certifications' />
         </div>
         <div class='flex_txt' id='certifications'>
           <h2 class='title'>Nos certifications</h2>
 
-          <img
-            src='../public/img/certifications.webp'
-            alt='texte_certifications'
-          />
+          <img src='../public/img/certifications.webp' alt='texte_certifications' />
 
           <div class='column'>
             <ul>
@@ -184,90 +149,35 @@
   <!-- Fin de la section certifications-->
   <!-- Début de la section partenaires-->
   <section class='hero is-medium is-bold carousel'>
-    <input
-      for='position1'
-      type='radio'
-      name='position'
-      id='position1'
-      aria-label='position1'
-    />
-    <input
-      for='position2'
-      type='radio'
-      name='position'
-      id='position2'
-      aria-label='position2'
-    />
-    <input
-      for='position3'
-      type='radio'
-      name='position'
-      id='position3'
-      aria-label='position3'
-    />
-    <input
-      for='position4'
-      type='radio'
-      name='position'
-      id='position4'
-      aria-label='position4'
-      checked
-    />
-    <input
-      for='position5'
-      type='radio'
-      name='position'
-      id='position5'
-      aria-label='position5'
-    />
-    <input
-      for='position6'
-      type='radio'
-      name='position'
-      id='position6'
-      aria-label='position6'
-    />
+    <input for='position1' type='radio' name='position' id='position1' aria-label='position1' />
+    <input for='position2' type='radio' name='position' id='position2' aria-label='position2' />
+    <input for='position3' type='radio' name='position' id='position3' aria-label='position3' />
+    <input for='position4' type='radio' name='position' id='position4' aria-label='position4' checked />
+    <input for='position5' type='radio' name='position' id='position5' aria-label='position5' />
+    <input for='position6' type='radio' name='position' id='position6' aria-label='position6' />
     <h2 id='partner_lowRes'>Nos partenaires</h2>
     <div id='carousel'>
       <h2 id='partner_highRes'>Nos partenaires</h2>
       <a class='item partner_3safe' href='https://3safe.fr/' target='_blank'>
         <img src='../public/logos/3safe.webp' alt='logo_3safe' />
       </a>
-      <a
-        class='item partner_aexor'
-        href='https://www.aexor.eu/'
-        target='_blank'
-      >
+      <a class='item partner_aexor' href='https://www.aexor.eu/' target='_blank'>
         <img src='../public/logos/aexor.webp' alt='logo_aexor' />
       </a>
       <a class='item partner_bart' href='#carousel'>
         <img src='../public/logos/bart.webp' alt='logo_bart_metallerie' />
       </a>
-      <a
-        class='item partner_asa'
-        href='https://www.asa-conception.fr/'
-        target='_blank'
-      >
+      <a class='item partner_asa' href='https://www.asa-conception.fr/' target='_blank'>
         <img src='../public/logos/asa.webp' alt='logo_asa_conception' />
       </a>
       <a class='item partner_phineo' href='https://phineo.co/' target='_blank'>
         <img src='../public/logos/phineo.webp' alt='logo_phineo' />
       </a>
-      <a
-        class='item partner_usinage'
-        href='https://www.usinage-formations.com'
-        target='_blank'
-      >
-        <img
-          src='../public/logos/usinage_formations.webp'
-          alt='logo_usinage_formations'
-        />
+      <a class='item partner_usinage' href='https://www.usinage-formations.com' target='_blank'>
+        <img src='../public/logos/usinage_formations.webp' alt='logo_usinage_formations' />
       </a>
       <a class='item partner_dl' href='https://davidlevast.fr' target='_blank'>
-        <img
-          src='../public/logos/logo_davidlevast.webp'
-          alt='logo_david_levast'
-        />
+        <img src='../public/logos/logo_davidlevast.webp' alt='logo_david_levast' />
       </a>
     </div>
   </section>
@@ -278,12 +188,24 @@
 <script>
 import Header from './components/Header.vue';
 import Footer from './components/Footer.vue';
+import { createHead } from '@vueuse/head'
 
 export default {
   name: 'App',
   components: {
     Header,
     Footer
+  },
+  setup() {
+    createHead({
+      title: 'ML INDUSTRIE, La formation industrielle et technique',
+      meta: [
+        {
+          name: 'description',
+          content: "ML Industrie est le spécialiste de la formation industrielle et technique. Basés en Normandie, nous sommes experts dans les domaines suivants: la formation mécanique, ainsi que la formation électricité, mais aussi la formation hydraulique.",
+        },
+      ],
+    })
   },
   data() {
     return {

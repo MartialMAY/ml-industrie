@@ -19,7 +19,7 @@ const routes = [
   /* {
     path: '/catalogue',
     name: 'Catalogue',
-    component: Catalogue
+    component: CatalogueLa
   }, */
   {
     path: '/programme',
