@@ -123,7 +123,7 @@ export default {
   components: { BackToTop },
   computed: {
     ...mapState({
-      cataLink: 'cataLink',
+      //cataLink: 'cataLink',
       contactLink: 'contactLink',
       candidatLink: 'candidatLink',
       livretLink: 'livretLink',

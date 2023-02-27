@@ -3,7 +3,7 @@ import { createStore } from "vuex";
 export default createStore({
   state: {
     lowResCataButton: "Télécharger",
-    cata: "Catalogue",
+    cata: "En construction",
     annuaire: "Annuaire",
     candidature: "Candidature",
     livret: "Livret Accueil",
