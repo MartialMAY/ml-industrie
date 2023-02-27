@@ -39,7 +39,7 @@
               <a class="navbar-item hoverEffect" :href='cataLink'
                 aria-label='Télécharger catalogue'
                 download='fichier'
-                >{{ cata }} Catalogue </a>
+                >{{ cata }} En construction... </a>
               <a class="navbar-item hoverEffect" href="https://www.ouformer.com/organisme-de-formation/ML-Industrie"> Calendrier Inter</a>
               <a class="navbar-item hoverEffect" href="/programme"> Programme de formation </a>
               <hr class="navbar-divider" />
@@ -87,7 +87,7 @@ export default {
   },
   computed: {
     ...mapState({
-      cataLink: 'cataLink'
+      //cataLink: 'cataLink'
     })
   },
   mounted () {
