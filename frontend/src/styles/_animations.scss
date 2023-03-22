@@ -658,11 +658,11 @@ a.item:nth-of-type(2) {
 }
 a.item:nth-of-type(3) {
   --offset: 3;
-  background-color: #fff;
+  background-color: #1b1b1b;
 }
 a.item:nth-of-type(4) {
   --offset: 4;
-  background-color: #1b1b1b;
+  background-color: #fff;
 }
 a.item:nth-of-type(5) {
   --offset: 5;
@@ -670,10 +670,6 @@ a.item:nth-of-type(5) {
 }
 a.item:nth-of-type(6) {
   --offset: 6;
-  background-color: #fff;
-}
-a.item:nth-of-type(7) {
-  --offset: 7;
   background-color: #3452a1;
 }
 .carousel input {

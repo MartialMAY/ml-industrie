@@ -158,9 +158,6 @@
     <h2 id='partner_lowRes'>Nos partenaires</h2>
     <div id='carousel'>
       <h2 id='partner_highRes'>Nos partenaires</h2>
-      <a class='item partner_3safe' href='https://3safe.fr/' target='_blank'>
-        <img src='../public/logos/3safe.webp' alt='logo_3safe' />
-      </a>
       <a class='item partner_aexor' href='https://www.aexor.eu/' target='_blank'>
         <img src='../public/logos/aexor.webp' alt='logo_aexor' />
       </a>
