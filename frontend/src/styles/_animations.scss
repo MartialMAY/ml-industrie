@@ -500,9 +500,97 @@
     }
   }
 }
+#fourthParagraph {
+  animation: paragraph5 3s;
+  @keyframes paragraph5 {
+    0% {
+      opacity: 0;
+    }
+    15% {
+      opacity: 0.1;
+    }
+    25% {
+      opacity: 0.2;
+    }
+    50% {
+      opacity: 0.4;
+    }
+    75% {
+      opacity: 0.7;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+#fourthParagraph span {
+  animation: paragraph6 8s;
+  @keyframes paragraph6 {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 0.1;
+    }
+    50% {
+      opacity: 0.3;
+    }
+    75% {
+      opacity: 0.7;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+#fifthParagraph {
+  animation: paragraph7 3s;
+  @keyframes paragraph7 {
+    0% {
+      opacity: 0;
+    }
+    15% {
+      opacity: 0.1;
+    }
+    25% {
+      opacity: 0.2;
+    }
+    50% {
+      opacity: 0.4;
+    }
+    75% {
+      opacity: 0.7;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+#fifthParagraph span {
+  animation: paragraph8 9s;
+  @keyframes paragraph8 {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 0.1;
+    }
+    50% {
+      opacity: 0.3;
+    }
+    75% {
+      opacity: 0.7;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
 #firstParagraph span,
 #secondParagraph span,
-#thirdParagraph span {
+#thirdParagraph span,
+#fourthParagraph span,
+#fifthParagraph span{
   color: rgb(42, 97, 107);
   font-size: 1.6rem;
 }

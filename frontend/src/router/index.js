@@ -1,8 +1,8 @@
 import { createWebHistory, createRouter } from 'vue-router'
-import Home from '../App.vue'
-//import App from '../App.vue'
+import Home from '../views/Home.vue'
 //import Catalogue from '../views/Catalogue.vue'
 import Programme from '../views/Programme.vue'
+import Contact from '../views/Contact.vue'
 import Header from '../components/Header.vue'
 import Footer from '../components/Footer.vue'
 import Signup from '../components/Signup.vue'
@@ -25,6 +25,11 @@ const routes = [
     path: '/programme',
     name: 'Programme',
     component: Programme
+  },
+  {
+    path: '/contact',
+    name: 'Contact',
+    component: Contact
   },
   {
     path: '/header',

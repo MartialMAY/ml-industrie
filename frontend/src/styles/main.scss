@@ -80,7 +80,7 @@ h3 {
   min-height: 6.25rem;
 }
 #navbarHeader:nth-child(2) {
-  margin-right: 150px;
+  margin-right: 350px;
 }
 .navbar-item {
   flex-direction: column;
@@ -210,7 +210,9 @@ h3 {
 }
 #firstParagraph:first-letter,
 #secondParagraph:first-letter,
-#thirdParagraph:first-letter {
+#thirdParagraph:first-letter,
+#fourthParagraph:first-letter,
+#fifthParagraph:first-letter {
   font-size: 30px;
   color: #30616A;
 }
