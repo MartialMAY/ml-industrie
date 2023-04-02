@@ -79,9 +79,6 @@ h3 {
   background-color: #c0c4c2;
   min-height: 6.25rem;
 }
-#navbarHeader:nth-child(2) {
-  margin-right: 350px;
-}
 .navbar-item {
   flex-direction: column;
   font-family: "Bebas_Neue";
@@ -89,6 +86,15 @@ h3 {
 }
 .navbar-item img {
   max-height: 4.75rem;
+}
+.navbar-item_title {
+  margin-right: 150px;
+}
+.navbar-item_contact {
+  flex-direction: row;
+}
+.navbar-item_contact i {
+  padding-right: 10px;
 }
 .navbar-item img:nth-of-type(2) {
   margin-top: 5px;
@@ -440,6 +446,11 @@ h3 {
   width: 6px;
   right: 20px;
 }
+.footer_contact {
+  display: block;
+  color: #4a4a4a;
+  padding-bottom: 20px
+}
 
 //     CATALOGUE.VUE        //
 
@@ -683,4 +694,27 @@ form {
 }
 .field.is-grouped {
   justify-content: center;
+}
+
+//    CONTACT   //
+
+.contact_locate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact_locate hr{
+  border: 2px solid #fff;
+  width: 10%;
+  height: 1px;
+}
+.contact_locate h1 {
+  text-align: center;
+}
+.contact_map {
+  margin: 50px 0;
+  border: 3px solid #fff;
+  border-radius: 5px;
+  box-shadow: -10px 10px 0 hsla(0, 0%, 100%, 0.15),
+    10px -10px 0 hsla(0, 0%, 100%, 0.15);
 }

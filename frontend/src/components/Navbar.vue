@@ -37,7 +37,7 @@
           </div>
         </div>
         <!-- Affichage du titre principal de la page-->
-        <div class="navbar-item hoverEffect">
+        <div class="navbar-item navbar-item_title hoverEffect">
           <p>{{ window.width >= 767 ? societe : '' }}</p>
           <p>{{ window.width >= 767 ? titre : '' }}</p>
         </div>
@@ -50,6 +50,9 @@
               </a>
               <a class="button is-light" href="/maintenance"> Se connecter </a>
             </div> -->
+            <a class="navbar-item navbar-item_contact" href="/contact">
+              <i class="fas fa-envelope"></i><span>nous contacter</span>
+            </a>
           </div>
         </div>
       </div>

@@ -5,8 +5,9 @@
       <!--Affichage de l'encart de présentation + certification-->
       <div class='hero-body'>
         <h1 class='title' onload='bgHover()'>
-          Le spécialiste des formations techniques pour l'industrie sur mesure dans toute la France
+          Le spécialiste des formations techniques
         </h1>
+        <h2 class="title">Pour l'industrie sur mesure, dans toute la France</h2>
         <hr class='accessory' />
         <div class='container container_certification'>
           <div class='container_certification__flex-left'>

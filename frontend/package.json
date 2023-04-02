@@ -19,6 +19,7 @@
     "bulma-carousel": "^4.0.24",
     "core-js": "^3.27.1",
     "express": "^4.18.2",
+    "leaflet": "^1.9.3",
     "request": "^2.79.0",
     "vue": "^3.2.45",
     "vue-axios": "^3.5.2",
