@@ -9,7 +9,7 @@
             23 impasse du Petit Pont 76230 ISNEAUVILLE
           </p>
           <p class='has-text-center'>Tél. 0767825380</p>
-          <a href='mailto:contact@mlindustrie.fr' class="footer_contact"><p class='has-text-center'>Email. contact@mlindustrie.fr</p></a>
+          <a href='mailto:mlindustrie76@gmail.com' class="footer_contact"><p class='has-text-center'>Email. mlindustrie76@gmail.com</p></a>
           <p class='has-text-center'>
             RCS ROUEN 879 564 896 – APE 7022Z – SIRET 879 564 896 000 14
           </p>

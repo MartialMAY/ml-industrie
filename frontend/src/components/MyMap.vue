@@ -20,7 +20,7 @@ export default {
         }).addTo(map);
 
         // Ajouter un marqueur à la carte
-        L.marker([49.49848737690784, 1.1529501423282853]).addTo(map)
+        L.marker([49.44092344476866, 1.0682833334232325]).addTo(map)
             .bindPopup('ML Industrie');
     },
 };
