@@ -6,10 +6,10 @@
           <h4>Qui sommes-nous ?</h4>
           <p class='has-text-center'>SAS ML INDUSTRIE au capital de 5 000€</p>
           <p class='has-text-center'>
-            23 impasse du Petit Pont 76230 ISNEAUVILLE
+            Le 109, 1 Rue Berthe Morisot 76100 ROUEN
           </p>
           <p class='has-text-center'>Tél. 0767825380</p>
-          <a href='mailto:mlindustrie76@gmail.com' class="footer_contact"><p class='has-text-center'>Email. mlindustrie76@gmail.com</p></a>
+          <a href='mailto:mlindustrie76@gmail.com' class="footer_contact"><p class='has-text-center'>Email. contact@mlindustrie.fr</p></a>
           <p class='has-text-center'>
             RCS ROUEN 879 564 896 – APE 7022Z – SIRET 879 564 896 000 14
           </p>
