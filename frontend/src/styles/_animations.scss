@@ -683,7 +683,7 @@
   align-items: center;
   justify-content: center;
   transform-style: preserve-3d;
-  perspective: 1150px;
+  perspective: 1000px;
   --items: 8;
   --middle: 5;
   --position: 1;
@@ -707,7 +707,7 @@
 }
 a.item {
   position: absolute;
-  width: 280px;
+  width: 260px;
   height: 400px;
   margin-top: 150px;
   background-color: coral;
@@ -758,6 +758,10 @@ a.item:nth-of-type(5) {
 }
 a.item:nth-of-type(6) {
   --offset: 6;
+  background-color: #282828;
+}
+a.item:nth-of-type(7) {
+  --offset: 7;
   background-color: #3452a1;
 }
 .carousel input {
@@ -810,6 +814,13 @@ input:nth-of-type(6) {
 input:nth-of-type(6):checked ~ #carousel {
   --position: 6;
 }
+input:nth-of-type(7) {
+  grid-column: 7 / 8;
+  grid-row: 2 / 3;
+}
+input:nth-of-type(7):checked ~ #carousel {
+  --position: 7;
+}
 .partner_asa img,
 .partner_phineo img,
 .partner_dl img,
@@ -837,6 +848,10 @@ input:nth-of-type(6):checked ~ #carousel {
 .partner_dl {
   margin-bottom: 30px;
 }
+.partner_robotique img {
+  pointer-events: auto;
+  margin-top: 15%;
+}
 //Gestion de la priorité d'affichage des partenaires
 @media screen and (max-width: 1201px) {
   .partner_3safe {
@@ -863,6 +878,9 @@ input:nth-of-type(6):checked ~ #carousel {
   }
   .partner_usinage {
     order: 6;
+  }
+  .partner_robotique {
+    order: 9;
   }
 }
 // Gestion de l'animation du carousel basse résolution

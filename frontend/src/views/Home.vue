@@ -180,6 +180,9 @@
         <a class='item partner_usinage' href='https://www.usinage-formations.com' target='_blank'>
           <img src='../../public/logos/usinage_formations.webp' alt='logo_usinage_formations' />
         </a>
+        <a class='item partner_robotique' href='https://www.robotiqueconcept.com/' target='_blank'>
+          <img src='../../public/logos/rc.webp' alt='logo_robotique_concept' />
+        </a>
         <a class='item partner_dl' href='https://davidlevast.fr' target='_blank'>
           <img src='../../public/logos/logo_davidlevast.webp' alt='logo_david_levast' />
         </a>
