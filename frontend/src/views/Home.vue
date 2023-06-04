@@ -59,7 +59,6 @@
               <h3>Chaudronnerie</h3>
               <h3>Organisation industrielle</h3>
               <h3>Robotique</h3>
-              <h3>Habilitation SST</h3>
               <h3>AIPR</h3>
               <h3>Habilitation électrique</h3>
               <h3>Incendie</h3>
@@ -68,13 +67,14 @@
           </div>
         </div>
         <div class="habilitation">
-          <div>
+          <div class="aipr">
             <img class='flex_img-formations' src='../../public/img/airp-image.webp' width='600' height='500'
               alt='texte_formations' />
           </div>
           <div class="sst">
             <img class='flex_img-formations' src='../../public/img/sst.webp' width='150' height='125'
               alt='texte_formations' />
+            <p>Habilitation SST</p>
           </div>
         </div>
       </div>

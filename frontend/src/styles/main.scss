@@ -452,10 +452,24 @@ h3 {
   padding-bottom: 20px
 }
 
+.aipr img {
+  border-radius: 10px;
+}
+
 .sst {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-top: 50px;
+}
+
+.sst img {
+  border-radius: 10px;
+}
+
+.sst p {
+  margin-left: 20px;
+  font-size: 1.4rem;
 }
 
 
