@@ -683,7 +683,7 @@
   align-items: center;
   justify-content: center;
   transform-style: preserve-3d;
-  perspective: 1000px;
+  perspective: 1100px;
   --items: 8;
   --middle: 5;
   --position: 1;
@@ -716,8 +716,8 @@ a.item {
     --r: calc(var(--position) - var(--offset));
     --abs: max(calc(var(--r) * -1), var(--r));
     transition: all 0.25s linear;
-    transform: rotateY(calc(-10deg * var(--r)))
-      translateX(calc(-320px * var(--r)));
+    transform: rotateY(calc(-9deg * var(--r)))
+      translateX(calc(-290px * var(--r)));
     z-index: calc((var(--position) - var(--abs)));
   }
   @media screen and (min-width: 920px) and (max-width: 1200px) {
