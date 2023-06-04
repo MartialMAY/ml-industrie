@@ -822,7 +822,6 @@ input:nth-of-type(7):checked ~ #carousel {
   --position: 7;
 }
 .partner_asa img,
-.partner_phineo img,
 .partner_dl img,
 .partner_usinage img {
   pointer-events: auto;
@@ -852,6 +851,10 @@ input:nth-of-type(7):checked ~ #carousel {
   pointer-events: auto;
   margin-top: 15%;
 }
+.partner_artemys img {
+  margin-top: 35%;
+}
+
 //Gestion de la priorité d'affichage des partenaires
 @media screen and (max-width: 1201px) {
   .partner_3safe {
