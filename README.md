@@ -1,3 +1,3 @@
 # mlindustrie
-# mlindustrie
-# mlindustrie
+# npm install (frontend)
+# npm run serve (frontend)
