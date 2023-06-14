@@ -189,7 +189,7 @@
       <a class='item partner_robotique' href='https://www.robotiqueconcept.com/' target='_blank'>
         <img src='../../public/logos/rc.webp' alt='logo_robotique_concept' />
       </a>
-      <a class='item partner_dl' href='https://davidlevast.fr' role='link' target='_blank' v-bind:class="{ disabled: isDisabled }">
+      <a class='item partner_dl' href='https://davidlevast.fr' role='link' target='_blank' v-bind:class='{ disabled: isDisabled }'>
         <img src='../../public/logos/logo_davidlevast.webp' alt='logo_david_levast' />
       </a>
     </div>
