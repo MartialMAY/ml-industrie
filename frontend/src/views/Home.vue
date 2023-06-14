@@ -189,7 +189,7 @@
       <a class='item partner_robotique' href='https://www.robotiqueconcept.com/' target='_blank'>
         <img src='../../public/logos/rc.webp' alt='logo_robotique_concept' />
       </a>
-      <a class='item partner_dl' href='https://davidlevast.fr' role='link' aria-disabled='true' target='_blank'>
+      <a class='item partner_dl' href='https://davidlevast.fr' role='link' aria-disabled='true' target='_blank' style="pointerEvents: 'none';">
         <img src='../../public/logos/logo_davidlevast.webp' alt='logo_david_levast' />
       </a>
     </div>
