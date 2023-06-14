@@ -211,7 +211,7 @@ export default {
   },
   setup() {
     createHead({
-      title: 'ML INDUSTRIE, La formation industrielle et technique',
+      title: 'ML INDUSTRIE, La formation industrielle et techniq',
       meta: [
         {
           name: 'description',
@@ -236,7 +236,7 @@ export default {
         width: 0,
         height: 0,
       },
-      isDisabled: true
+      isDisabled: true,
     };
   },
   created() {
