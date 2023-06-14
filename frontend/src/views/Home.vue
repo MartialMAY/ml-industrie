@@ -122,7 +122,7 @@
               <li>Fiables</li>
               <li>Compétents</li>
               <li>Disponibles</li>
-              <li>A l'écoute de vos besoins</li>
+              <li>A l'écoute de vos besoin</li>
             </ul>
           </div>
         </div>
@@ -211,7 +211,7 @@ export default {
   },
   setup() {
     createHead({
-      title: 'ML INDUSTRIE, La formation industrielle et techniq',
+      title: 'ML INDUSTRIE, La formation industrielle et technique',
       meta: [
         {
           name: 'description',
