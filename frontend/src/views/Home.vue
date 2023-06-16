@@ -171,25 +171,25 @@
     <h2 id='partner_lowRes'>Nos partenaires</h2>
     <div id='carousel'>
       <h2 id='partner_highRes'>Nos partenaires</h2>
-      <a class='item partner_aexor' href='https://www.aexor.eu/' target='_blank'>
+      <a class='item partner_aexor' aria-disabled="true" target='_blank'>
         <img src='../../public/logos/aexor.webp' alt='logo_aexor' />
       </a>
       <a class='item partner_bart' href='#carousel'>
         <img src='../../public/logos/bart.webp' alt='logo_bart_metallerie' />
       </a>
-      <a class='item partner_asa' href='https://www.asa-conception.fr/' target='_blank'>
+      <a class='item partner_asa' aria-disabled="true" target='_blank'>
         <img src='../../public/logos/asa.webp' alt='logo_asa_conception' />
       </a>
       <a class='item partner_artemys' href='#carousel'>
         <img src='../../public/logos/artemys.webp' alt='logo_artemys' />
       </a>
-      <a class='item partner_usinage' href='https://www.usinage-formations.com' target='_blank'>
+      <a class='item partner_usinage' aria-disabled="true" target='_blank'>
         <img src='../../public/logos/usinage_formations.webp' alt='logo_usinage_formations' />
       </a>
-      <a class='item partner_robotique' href='https://www.robotiqueconcept.com/' target='_blank'>
+      <a class='item partner_robotique' aria-disabled="true" target='_blank'>
         <img src='../../public/logos/rc.webp' alt='logo_robotique_concept' />
       </a>
-      <a class='item partner_dl' href='https://davidlevast.fr' role='link' target='_blank' v-bind:class='{ disabled: isDisabled }'>
+      <a class='item partner_dl' aria-disabled="true" role='link' target='_blank' >
         <img src='../../public/logos/logo_davidlevast.webp' alt='logo_david_levast' />
       </a>
     </div>
@@ -353,8 +353,3 @@ export default {
 }
 </script>
 
-<style>
-.disabled {
-  pointer-events: none;
-}
-</style>
