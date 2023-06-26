@@ -122,7 +122,7 @@
               <li>Fiables</li>
               <li>Compétents</li>
               <li>Disponibles</li>
-              <li>A l'écoute de vos besoin</li>
+              <li>A l'écoute de vos besoins</li>
             </ul>
           </div>
         </div>
