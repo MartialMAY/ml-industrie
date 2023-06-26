@@ -168,29 +168,29 @@
     <input for='position4' type='radio' name='position' id='position4' aria-label='position4' checked />
     <input for='position5' type='radio' name='position' id='position5' aria-label='position5' />
     <input for='position6' type='radio' name='position' id='position6' aria-label='position6' />
-    <h2 id='partner_lowRes'>Nos partenaires</h2>
+    
     <div id='carousel'>
       <h2 id='partner_highRes'>Nos partenaires</h2>
-      <a class='item partner_aexor' href='https://www.aexor.eu/' target='_blank'>
-        <img src='../../public/logos/aexor.webp' alt='logo_aexor' />
+      <a class='item partner_aexor'   target='_blank'><!-- href='https://www.aexor.eu/' -->
+         <img src='../../public/logos/aexor.webp' alt='logo_aexor' />
       </a>
       <a class='item partner_bart' href='#carousel'>
         <img src='../../public/logos/bart.webp' alt='logo_bart_metallerie' />
       </a>
-      <a class='item partner_asa' href='https://www.asa-conception.fr/' target='_blank'>
+       <a class='item partner_asa'  target='_blank'><!-- href='https://www.asa-conception.fr/' -->
         <img src='../../public/logos/asa.webp' alt='logo_asa_conception' />
       </a>
       <a class='item partner_artemys' href='#carousel'>
         <img src='../../public/logos/artemys.webp' alt='logo_artemys' />
       </a>
-      <a class='item partner_usinage' href='https://www.usinage-formations.com' target='_blank'>
+       <a class='item partner_usinage'   target='_blank'><!-- href='https://www.usinage-formations.com' -->
         <img src='../../public/logos/usinage_formations.webp' alt='logo_usinage_formations' />
       </a>
-      <a class='item partner_robotique' href='https://www.robotiqueconcept.com/' target='_blank'>
+       <a class='item partner_robotique'  target='_blank'><!-- href='https://www.robotiqueconcept.com/' -->
         <img src='../../public/logos/rc.webp' alt='logo_robotique_concept' />
       </a>
-      <a class='item partner_dl' href='https://davidlevast.fr' role='link' target='_blank' v-bind:disabled="isDisabled">
-        <img src='../../public/logos/logo_davidlevast.webp' alt='logo_david_levast' />
+       <a class='item partner_dl'  role='link' target='_blank' ><!-- href='https://davidlevast.fr' -->
+        <img src='../../public/logos/logo_davidlevast.webp' alt='logo_david_levast'/>
       </a>
     </div>
   </section>
@@ -236,7 +236,7 @@ export default {
         width: 0,
         height: 0,
       },
-      isDisabled: true
+      isDisabled: true,
     };
   },
   created() {
@@ -352,3 +352,4 @@ export default {
   }
 }
 </script>
+
