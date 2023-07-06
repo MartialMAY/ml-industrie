@@ -1,3 +1,2 @@
-User-agent: googlebot
-Disallow: 
-p
+User-agent: *
+Disallow:
